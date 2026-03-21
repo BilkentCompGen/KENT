@@ -1,0 +1,1050 @@
+#include <algorithm>
+#include <climits>
+#include <cstdlib>
+#include <cstring>
+#include <dirent.h>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <sstream>
+#include <string>
+#include <sys/stat.h>
+#include <unistd.h>
+#include <map>
+#include <vector>
+
+using namespace std;
+
+static bool is_dir_nonempty(const string &dir)
+{
+    DIR *d = opendir(dir.c_str());
+    if (!d)
+        return false;
+    struct dirent *ent;
+    bool empty = true;
+    while ((ent = readdir(d)) != NULL)
+    {
+        if (strcmp(ent->d_name, ".") != 0 && strcmp(ent->d_name, "..") != 0)
+        {
+            empty = false;
+            break;
+        }
+    }
+    closedir(d);
+    return !empty;
+}
+
+static bool exists_file(const string &path)
+{
+    struct stat st;
+    return stat(path.c_str(), &st) == 0;
+}
+
+static bool exists_dir(const string &path)
+{
+    struct stat st;
+    return stat(path.c_str(), &st) == 0 && S_ISDIR(st.st_mode);
+}
+
+static string resolve_database_path(const string &path)
+{
+    if (path.empty())
+        return path;
+    const char *home = getenv("HOME");
+    if (path[0] == '~')
+    {
+        if (home)
+            return string(home) + path.substr(1);
+        return path;
+    }
+    if (path[0] != '/' && home)
+        return string(home) + string("/") + path;
+    return path;
+}
+
+static string shell_quote(const string &value)
+{
+    string quoted = "'";
+    for (size_t i = 0; i < value.size(); ++i)
+    {
+        if (value[i] == '\'')
+            quoted += "'\"'\"'";
+        else
+            quoted += value[i];
+    }
+    quoted += "'";
+    return quoted;
+}
+
+static bool parse_positive_int(const string &text, int &value)
+{
+    if (text.empty())
+        return false;
+    char *end = NULL;
+    long parsed = strtol(text.c_str(), &end, 10);
+    if (*end != '\0' || parsed <= 0 || parsed > INT_MAX)
+        return false;
+    value = static_cast<int>(parsed);
+    return true;
+}
+
+static bool parse_double(const string &text, double &value)
+{
+    if (text.empty() || text == "-")
+        return false;
+    char *end = NULL;
+    value = strtod(text.c_str(), &end);
+    if (*end != '\0')
+        return false;
+    return true;
+}
+
+static string format_percentage(double value)
+{
+    ostringstream oss;
+    oss << fixed << setprecision(2) << value;
+    return oss.str();
+}
+
+struct AbundanceEntry {
+    string name;
+    string taxId;
+    string lineage;
+    long long count;
+};
+
+struct AbundanceFile {
+    vector<AbundanceEntry> entries;
+    bool hasLineage;
+};
+
+static bool parse_abundance_file(const string &path, AbundanceFile &result)
+{
+    ifstream in(path.c_str());
+    if (!in)
+    {
+        cerr << "Failed to open abundance file: " << path << endl;
+        return false;
+    }
+
+    string header;
+    if (!getline(in, header))
+    {
+        cerr << "Abundance file is empty: " << path << endl;
+        return false;
+    }
+
+    result.hasLineage = (header.find("Lineage") != string::npos);
+    result.entries.clear();
+
+    string line;
+    while (getline(in, line))
+    {
+        if (line.empty())
+            continue;
+
+        vector<string> parts;
+        string part;
+        istringstream ss(line);
+        while (getline(ss, part, ','))
+            parts.push_back(part);
+
+        AbundanceEntry entry;
+        if (result.hasLineage)
+        {
+            if (parts.size() < 6)
+                continue;
+            entry.name = parts[0];
+            entry.taxId = parts[1];
+            entry.lineage = parts[2];
+            char *end = NULL;
+            entry.count = strtoll(parts[3].c_str(), &end, 10);
+        }
+        else
+        {
+            if (parts.size() < 5)
+                continue;
+            entry.name = parts[0];
+            entry.taxId = parts[1];
+            char *end = NULL;
+            entry.count = strtoll(parts[2].c_str(), &end, 10);
+        }
+        result.entries.push_back(entry);
+    }
+
+    return true;
+}
+
+int check_database(string path)
+{
+    vector<string> errors;
+    // expand path relative to HOME if needed
+    string dbPath = resolve_database_path(path);
+
+    bool dbExists = exists_dir(dbPath);
+    bool dbNonEmpty = dbExists && is_dir_nonempty(dbPath);
+    if (!dbExists)
+        errors.push_back(string("Database directory not found: ") + dbPath);
+    else if (!dbNonEmpty)
+        errors.push_back(string("Database directory is empty: ") + dbPath);
+
+    string customDir = dbPath + "/Custom";
+    string taxonomyDir = dbPath + "/taxonomy";
+    string taxonFile = dbPath + "/.taxondata";
+
+    // Check required directories
+    bool customExists = exists_dir(customDir);
+    if (!customExists)
+        errors.push_back(string("Missing directory: ") + customDir);
+    bool taxonomyExists = exists_dir(taxonomyDir);
+    if (!taxonomyExists)
+        errors.push_back(string("Missing directory: ") + taxonomyDir);
+
+    // check for fasta files in Custom (only if Custom exists)
+    if (customExists)
+    {
+        bool hasFasta = false;
+        DIR *cd = opendir(customDir.c_str());
+        if (cd)
+        {
+            struct dirent *ent;
+            while ((ent = readdir(cd)) != NULL)
+            {
+                string name = ent->d_name;
+                if (name == "." || name == "..")
+                    continue;
+                size_t pos = name.find_last_of('.');
+                if (pos != string::npos)
+                {
+                    string ext = name.substr(pos + 1);
+                    if (ext == "fa" || ext == "fna" || ext == "fasta")
+                    {
+                        hasFasta = true;
+                        break;
+                    }
+                }
+            }
+            closedir(cd);
+        }
+        if (!hasFasta)
+            errors.push_back(string("No fasta files found in ") + customDir);
+    }
+
+    // Check taxonomy directory contents
+    if (taxonomyExists)
+    {
+        vector<string> taxFiles = {"citations.dmp", "delnodes.dmp", "division.dmp",
+                                   "gc.prt", "gencode.dmp", "images.dmp",
+                                   "merged.dmp", "names.dmp", "nodes.dmp",
+                                   "nucl_accss"};
+        for (size_t i = 0; i < taxFiles.size(); ++i)
+        {
+            string f = taxonomyDir + "/" + taxFiles[i];
+            if (!exists_file(f))
+                errors.push_back(string("Missing file in taxonomy directory: ") + f);
+        }
+    }
+
+    // Ensure .taxondata file exists
+    if (!exists_file(taxonFile))
+    {
+        ofstream ofs(taxonFile.c_str());
+        if (!ofs)
+            errors.push_back(string("Failed to create ") + taxonFile);
+    }
+
+    if (!errors.empty())
+    {
+        cerr << "Database check found issues:" << endl;
+        for (size_t i = 0; i < errors.size(); ++i)
+            cerr << " - " << errors[i] << endl;
+        return 1;
+    }
+
+    return 0;
+}
+
+static int handle_verify()
+{
+    cout << "========================================" << endl;
+    cout << "  CuCLARK Installation Verification" << endl;
+    cout << "========================================" << endl << endl;
+
+    bool allOk = true;
+
+    // Check 1: Binaries exist
+    cout << "1. Checking binaries..." << endl;
+    vector<string> required_bins;
+    required_bins.push_back("bin/kent");
+    required_bins.push_back("bin/cuCLARK");
+    required_bins.push_back("bin/cuCLARK-l");
+    required_bins.push_back("bin/getTargetsDef");
+    required_bins.push_back("bin/getAccssnTaxID");
+    required_bins.push_back("bin/getfilesToTaxNodes");
+    required_bins.push_back("bin/getAbundance");
+
+    for (size_t i = 0; i < required_bins.size(); i++)
+    {
+        if (exists_file(required_bins[i]))
+        {
+            cout << "   \u2713 " << required_bins[i] << endl;
+        }
+        else
+        {
+            cout << "   \u2717 " << required_bins[i] << " (missing)" << endl;
+            allOk = false;
+        }
+    }
+    cout << endl;
+
+    // Check 2: Directory structure
+    cout << "2. Checking directory structure..." << endl;
+    vector<string> required_dirs;
+    required_dirs.push_back("bin");
+    required_dirs.push_back("logs");
+    required_dirs.push_back("results");
+    required_dirs.push_back("scripts");
+
+    for (size_t i = 0; i < required_dirs.size(); i++)
+    {
+        if (exists_dir(required_dirs[i]))
+        {
+            cout << "   \u2713 " << required_dirs[i] << "/" << endl;
+        }
+        else
+        {
+            cout << "   \u2717 " << required_dirs[i] << "/ (missing)" << endl;
+            allOk = false;
+        }
+    }
+    cout << endl;
+
+    // Check 3: Installation status
+    cout << "3. Checking installation status..." << endl;
+    const string logFile = "logs/kentcpp_log.txt";
+    ifstream logIn(logFile.c_str());
+    if (logIn)
+    {
+        string line;
+        if (getline(logIn, line) && line == "INSTALLED=1")
+        {
+            cout << "   \u2713 Installation marker found" << endl;
+        }
+        else
+        {
+            cout << "   \u26A0 Installation incomplete or not verified" << endl;
+            allOk = false;
+        }
+        logIn.close();
+    }
+    else
+    {
+        cout << "   \u2717 Installation log not found" << endl;
+        allOk = false;
+    }
+    cout << endl;
+
+    // Check 4: Database setup
+    bool dbReady = false;
+    cout << "4. Checking database setup..." << endl;
+    if (exists_file("scripts/.settings"))
+    {
+        cout << "   \u2713 Database configured (scripts/.settings exists)" << endl;
+        dbReady = true;
+    }
+    else
+    {
+        cout << "   \u26A0 Database not configured (run: kent -d <database_path>)" << endl;
+    }
+    cout << endl;
+
+    // Summary
+    cout << "========================================" << endl;
+    if (allOk && dbReady)
+    {
+        cout << "Status: READY \u2713" << endl;
+        cout << "========================================" << endl;
+        return 0;
+    }
+    else if (allOk && !dbReady)
+    {
+        cout << "Status: Installation complete, database not ready" << endl;
+        cout << "========================================" << endl;
+        cout << endl;
+        cout << "To set up database, run: kent -d <database_path>" << endl;
+        return 1;
+    }
+    else
+    {
+        cout << "Status: INCOMPLETE" << endl;
+        cout << "========================================" << endl;
+        cout << endl;
+        cout << "To complete installation, run: ./install.sh" << endl;
+        return 1;
+    }
+}
+
+static int handle_database(const string &dbPath)
+{
+    if (dbPath.empty())
+    {
+        cerr << "Database path is empty." << endl;
+        return 1;
+    }
+
+    // Check if database is already set up
+    if (exists_file("scripts/.settings"))
+    {
+        cerr << "Database is already configured (scripts/.settings exists)." << endl;
+        cerr << "To reconfigure, you must first reset the database." << endl;
+        return 1;
+    }
+
+    string resolvedPath = resolve_database_path(dbPath);
+    if (check_database(resolvedPath) != 0)
+    {
+        cerr << "Database error, exiting the program." << endl;
+        return 1;
+    }
+
+    const string scriptPath = "./scripts/set_targets.sh";
+    if (!exists_file(scriptPath))
+    {
+        cerr << "Set targets script not found: " << scriptPath << endl;
+        return 1;
+    }
+
+    // Change directory to scripts/ so the relative paths inside the shell scripts work
+    string command = string("cd scripts && ./set_targets.sh ") + shell_quote(resolvedPath) + " custom";
+    int rc = system(command.c_str());
+    if (rc != 0)
+    {
+        cerr << "set_targets.sh failed with exit code " << rc << endl;
+        return 1;
+    }
+
+    cout << "Database is ready." << endl;
+    return 0;
+}
+
+struct ClassifyOptions {
+    string inputFile;       // -O (single) or -P file1 (paired)
+    string pairFile;        // -P file2 (paired-end only)
+    bool isPaired;
+    string resultFile;      // -R
+    int batchSize;          // -b, default 32
+    int kmerSize;           // -k, -1 = unset (script default: 31)
+    int minFreqTarget;      // -t, -1 = unset (script default: 0)
+    int numThreads;         // -n, -1 = unset
+    int numDevices;         // -d, -1 = unset
+    int gapIteration;       // -g, -1 = unset (script default: 4)
+    string samplingFactor;  // -s, "" = unset
+    bool tsk;               // --tsk
+    bool extended;          // --extended
+    bool gzipped;           // --gzipped
+    bool verbose;           // --verbose
+
+    ClassifyOptions() : isPaired(false), batchSize(32), kmerSize(-1),
+        minFreqTarget(-1), numThreads(-1), numDevices(-1), gapIteration(-1),
+        tsk(false), extended(false), gzipped(false), verbose(false) {}
+};
+
+static int handle_classification(const ClassifyOptions &opts)
+{
+    const string scriptPath = "./scripts/classify_metagenome.sh";
+    if (!exists_file(scriptPath))
+    {
+        cerr << "Classification script not found: " << scriptPath << endl;
+        return 1;
+    }
+
+    if (opts.inputFile.empty())
+    {
+        cerr << "Input file not specified." << endl;
+        return 1;
+    }
+
+    if (opts.batchSize <= 0)
+    {
+        cerr << "Batch size must be a positive integer." << endl;
+        return 1;
+    }
+
+    // Resolve paths to absolute — the script runs from scripts/, so relative
+    // paths must be anchored to the project root (cwd).
+    char cwdBuf[4096];
+    if (!getcwd(cwdBuf, sizeof(cwdBuf)))
+    {
+        cerr << "Failed to get current working directory." << endl;
+        return 1;
+    }
+    string cwd = string(cwdBuf);
+
+    auto makeAbsolute = [&cwd](const string &p) -> string {
+        if (!p.empty() && p[0] != '/')
+            return cwd + "/" + p;
+        return p;
+    };
+
+    string absInputFile = makeAbsolute(opts.inputFile);
+    if (!exists_file(absInputFile))
+    {
+        cerr << "Input file not found: " << absInputFile << endl;
+        return 1;
+    }
+
+    if (opts.isPaired)
+    {
+        string absPairFile = makeAbsolute(opts.pairFile);
+        if (!exists_file(absPairFile))
+        {
+            cerr << "Paired input file not found: " << absPairFile << endl;
+            return 1;
+        }
+    }
+
+    string absResultPath;
+    if (!opts.resultFile.empty() && opts.resultFile[0] == '/')
+        absResultPath = opts.resultFile;
+    else
+        absResultPath = cwd + "/results/" + opts.resultFile;
+
+    string command = "cd scripts && ./classify_metagenome.sh";
+
+    if (opts.isPaired)
+        command += " -P " + shell_quote(makeAbsolute(opts.inputFile)) +
+                   " " + shell_quote(makeAbsolute(opts.pairFile));
+    else
+        command += " -O " + shell_quote(absInputFile);
+
+    command += " -R " + shell_quote(absResultPath);
+    command += " -b " + to_string(opts.batchSize);
+    command += " --light";
+
+    if (opts.kmerSize > 0)
+        command += " -k " + to_string(opts.kmerSize);
+    if (opts.minFreqTarget >= 0)
+        command += " -t " + to_string(opts.minFreqTarget);
+    if (opts.numThreads > 0)
+        command += " -n " + to_string(opts.numThreads);
+    if (opts.numDevices > 0)
+        command += " -d " + to_string(opts.numDevices);
+    if (opts.gapIteration > 0)
+        command += " -g " + to_string(opts.gapIteration);
+    if (!opts.samplingFactor.empty())
+        command += " -s " + shell_quote(opts.samplingFactor);
+    if (opts.tsk)
+        command += " --tsk";
+    if (opts.extended)
+        command += " --extended";
+    if (opts.gzipped)
+        command += " --gzipped";
+    if (opts.verbose)
+        command += " --verbose";
+
+    int rc = system(command.c_str());
+    if (rc != 0)
+    {
+        cerr << "Classification command failed with exit code " << rc << endl;
+        return 1;
+    }
+
+    return 0;
+}
+
+static int handle_abundance(const string &dbPath, const string &resultFile, const string &outputFile)
+{
+    if (dbPath.empty())
+    {
+        cerr << "Database path is empty." << endl;
+        return 1;
+    }
+
+    if (resultFile.empty())
+    {
+        cerr << "Result file path is empty." << endl;
+        return 1;
+    }
+
+    const string scriptPath = "./scripts/estimate_abundance.sh";
+
+    if (!exists_file(scriptPath))
+    {
+        cerr << "Abundance script not found: " << scriptPath << endl;
+        return 1;
+    }
+
+    if (!exists_file(resultFile))
+    {
+        cerr << "Classification output not found: " << resultFile << endl;
+        cerr << "Make sure you provide the correct path to the .csv file produced by classification." << endl;
+        return 1;
+    }
+
+    string resolvedPath = resolve_database_path(dbPath);
+    if (!exists_dir(resolvedPath))
+    {
+        cerr << "Database directory not found: " << resolvedPath << endl;
+        return 1;
+    }
+
+    string command = string("./scripts/estimate_abundance.sh -D ") + shell_quote(resolvedPath) +
+                     " -F " + shell_quote(resultFile) + " > " + shell_quote(outputFile);
+
+    int rc = system(command.c_str());
+    if (rc != 0)
+    {
+        cerr << "Abundance estimation failed with exit code " << rc << endl;
+        return 1;
+    }
+
+    cout << "Abundance estimation completed successfully." << endl;
+    return 0;
+}
+
+static int handle_merge(const vector<string> &inputFiles, const string &outputFile)
+{
+    // Validate all input files exist
+    for (size_t i = 0; i < inputFiles.size(); ++i)
+    {
+        if (!exists_file(inputFiles[i]))
+        {
+            cerr << "Abundance file not found: " << inputFiles[i] << endl;
+            return 1;
+        }
+    }
+
+    // Parse all files and accumulate into a map keyed on taxId
+    map<string, AbundanceEntry> merged;
+    bool anyLineage = false;
+
+    for (size_t i = 0; i < inputFiles.size(); ++i)
+    {
+        AbundanceFile af;
+        if (!parse_abundance_file(inputFiles[i], af))
+            return 1;
+
+        if (af.hasLineage)
+            anyLineage = true;
+
+        for (size_t j = 0; j < af.entries.size(); ++j)
+        {
+            const AbundanceEntry &e = af.entries[j];
+            map<string, AbundanceEntry>::iterator it = merged.find(e.taxId);
+            if (it != merged.end())
+            {
+                it->second.count += e.count;
+                if (it->second.name.empty() && !e.name.empty())
+                    it->second.name = e.name;
+                if (it->second.lineage.empty() && !e.lineage.empty())
+                    it->second.lineage = e.lineage;
+            }
+            else
+            {
+                merged[e.taxId] = e;
+            }
+        }
+    }
+
+    if (merged.empty())
+    {
+        cerr << "No entries found in any input file." << endl;
+        return 1;
+    }
+
+    // Compute totals
+    long long grandTotal = 0;
+    long long unknownCount = 0;
+    bool hasUnknown = false;
+    AbundanceEntry unknownEntry;
+
+    for (map<string, AbundanceEntry>::iterator it = merged.begin(); it != merged.end(); ++it)
+    {
+        grandTotal += it->second.count;
+        if (it->second.taxId == "UNKNOWN" || it->second.name == "UNKNOWN")
+        {
+            unknownCount = it->second.count;
+            unknownEntry = it->second;
+            hasUnknown = true;
+        }
+    }
+
+    long long classifiedTotal = grandTotal - unknownCount;
+
+    // Collect non-UNKNOWN entries and sort alphabetically by name
+    vector<AbundanceEntry> sorted;
+    for (map<string, AbundanceEntry>::iterator it = merged.begin(); it != merged.end(); ++it)
+    {
+        if (it->second.taxId != "UNKNOWN" && it->second.name != "UNKNOWN")
+            sorted.push_back(it->second);
+    }
+    sort(sorted.begin(), sorted.end(), [](const AbundanceEntry &a, const AbundanceEntry &b) {
+        return a.name < b.name;
+    });
+
+    // Write output
+    ofstream out(outputFile.c_str());
+    if (!out)
+    {
+        cerr << "Failed to open output file: " << outputFile << endl;
+        return 1;
+    }
+
+    if (anyLineage)
+        out << "Name,TaxID,Lineage,Count,Proportion_All(%),Proportion_Classified(%)" << endl;
+    else
+        out << "Name,TaxID,Count,Proportion_All(%),Proportion_Classified(%)" << endl;
+
+    for (size_t i = 0; i < sorted.size(); ++i)
+    {
+        const AbundanceEntry &e = sorted[i];
+        double propAll = (grandTotal > 0) ? 100.0 * e.count / grandTotal : 0.0;
+        double propClassified = (classifiedTotal > 0) ? 100.0 * e.count / classifiedTotal : 0.0;
+
+        out << e.name << "," << e.taxId;
+        if (anyLineage)
+            out << "," << e.lineage;
+        out << "," << e.count
+            << "," << format_percentage(propAll)
+            << "," << format_percentage(propClassified) << endl;
+    }
+
+    if (hasUnknown)
+    {
+        double propAll = (grandTotal > 0) ? 100.0 * unknownCount / grandTotal : 0.0;
+        out << unknownEntry.name << "," << unknownEntry.taxId;
+        if (anyLineage)
+            out << "," << unknownEntry.lineage;
+        out << "," << unknownCount
+            << "," << format_percentage(propAll)
+            << ",-" << endl;
+    }
+
+    cout << "Merged " << inputFiles.size() << " abundance files (" << grandTotal
+         << " total reads) -> " << outputFile << endl;
+    return 0;
+}
+
+static int handle_report(const string &reportFile)
+{
+    if (!exists_file(reportFile))
+    {
+        cerr << "Abundance result file not found: " << reportFile << endl;
+        return 1;
+    }
+
+    ifstream in(reportFile.c_str());
+    if (!in)
+    {
+        cerr << "Failed to open " << reportFile << endl;
+        return 1;
+    }
+
+    string header;
+    if (!getline(in, header))
+    {
+        cerr << "Abundance result file is empty." << endl;
+        return 1;
+    }
+
+    const string outputFile = "results/report.txt";
+    ofstream out(outputFile.c_str());
+    if (!out)
+    {
+        cerr << "Failed to open " << outputFile << " for writing." << endl;
+        return 1;
+    }
+
+    struct Entry
+    {
+        string name;
+        double propAll;
+        double propClassified;
+    };
+
+    vector<Entry> entries;
+    string line;
+    while (getline(in, line))
+    {
+        if (line.empty())
+            continue;
+        vector<string> parts;
+        string part;
+        istringstream ss(line);
+        while (getline(ss, part, ','))
+            parts.push_back(part);
+        if (parts.size() < 6)
+            continue;
+
+        if (parts[0] == "UNKNOWN")
+            continue;
+
+        double propAll = 0.0;
+        double propClassified = 0.0;
+        if (!parse_double(parts[4], propAll))
+            continue;
+        if (!parse_double(parts[5], propClassified))
+            continue;
+
+        entries.push_back(Entry{parts[0], propAll, propClassified});
+    }
+
+    if (entries.empty())
+    {
+        out << "RESULT" << endl;
+        out << "No classified pathogens found in " << reportFile << "." << endl;
+        cout << "Report written to " << outputFile << endl;
+        return 0;
+    }
+
+    sort(entries.begin(), entries.end(), [](const Entry &a, const Entry &b) {
+        if (a.propClassified == b.propClassified)
+            return a.name < b.name;
+        return a.propClassified > b.propClassified;
+    });
+
+    out << "RESULT" << endl;
+    out << "Your read contains these pathogens, the percentage of all input reads (including unclassified) "
+           "that hit this taxon and the percentage among only the reads that got classified that hit this taxon."
+        << endl;
+    for (size_t i = 0; i < entries.size(); ++i)
+    {
+        const Entry &e = entries[i];
+        out << "- " << e.name << ": " << format_percentage(e.propAll) << "% among all, "
+            << format_percentage(e.propClassified) << "% among classified" << endl;
+    }
+
+    cout << "Report written to " << outputFile << endl;
+    return 0;
+}
+
+
+int main(int argc, char *argv[])
+{
+    if (argc < 2)
+    {
+        cerr << "Usage: " << argv[0] << " [OPTIONS]" << endl;
+        cerr << "Options: -h, --help, -v/--verify, -d <database_path>, -c -O <fastq> -R <result> [options], -a <database> <result> [-o <output>], -m <f1> <f2> [...], -r [<abundance_file>]" << endl;
+        return 1;
+    }
+
+    string arg = argv[1];
+    if (arg == "-h" || arg == "--help")
+    {
+        cout << "Usage: " << argv[0] << " [OPTIONS]" << endl;
+        cout << endl;
+        cout << "Options:" << endl;
+        cout << "  -v, --verify              Verify installation status" << endl;
+        cout << "  -d <database_path>        Setup database targets" << endl;
+        cout << "  -c [OPTIONS]              Classify reads" << endl;
+        cout << "     -O <file>              Single-end input reads (required unless -P)" << endl;
+        cout << "     -P <file1> <file2>     Paired-end input reads" << endl;
+        cout << "     -R <file>              Results output file (required)" << endl;
+        cout << "     -b <int>               Number of batches (default: 32)" << endl;
+        cout << "     -k <int>               K-mer length, 2-32 (default: 31)" << endl;
+        cout << "     -t <int>               Min k-mer frequency in targets (default: 0)" << endl;
+        cout << "     -n <int>               Number of threads" << endl;
+        cout << "     -d <int>               Number of CUDA devices" << endl;
+        cout << "     -g <int>               Gap/non-overlapping k-mers for cuCLARK-l (default: 4)" << endl;
+        cout << "     -s <factor>            Sampling factor (cuCLARK only)" << endl;
+        cout << "     --tsk                  Target-specific k-mer files (detailed DB creation)" << endl;
+        cout << "     --extended             Extended results output" << endl;
+        cout << "     --gzipped              Input files are gzipped" << endl;
+        cout << "     --verbose              Verbose diagnostic output" << endl;
+        cout << "  -a <database> <result> [-o <output>]" << endl;
+        cout << "                            Estimate abundance (default output: results/abundance_result.csv)" << endl;
+        cout << "  -m <f1> <f2> [f3...]      Merge abundance files from split runs" << endl;
+        cout << "     -o <file>              Output file (default: results/abundance_merged.csv)" << endl;
+        cout << "  -r [<abundance_file>]      Generate report (default: results/abundance_result.csv)" << endl;
+        cout << "  -h, --help                Show this help" << endl;
+        return 0;
+    }
+
+    if (arg == "-v" || arg == "--verify")
+    {
+        return handle_verify();
+    }
+
+    if (arg == "-d")
+    {
+        if (argc < 3)
+        {
+            cerr << "Missing database path for -d option." << endl;
+            return 1;
+        }
+        return handle_database(argv[2]);
+    }
+
+    if (arg == "-c")
+    {
+        ClassifyOptions opts;
+        bool seenInput = false, seenResult = false;
+
+        for (int i = 2; i < argc; ++i)
+        {
+            string a(argv[i]);
+            if (a == "-O")
+            {
+                if (i + 1 >= argc) { cerr << "Missing argument for -O" << endl; return 1; }
+                opts.inputFile = argv[++i];
+                opts.isPaired = false;
+                seenInput = true;
+            }
+            else if (a == "-P")
+            {
+                if (i + 2 >= argc) { cerr << "-P requires two filenames" << endl; return 1; }
+                opts.inputFile = argv[++i];
+                opts.pairFile = argv[++i];
+                opts.isPaired = true;
+                seenInput = true;
+            }
+            else if (a == "-R")
+            {
+                if (i + 1 >= argc) { cerr << "Missing argument for -R" << endl; return 1; }
+                opts.resultFile = argv[++i];
+                seenResult = true;
+            }
+            else if (a == "-b")
+            {
+                if (i + 1 >= argc || !parse_positive_int(argv[i + 1], opts.batchSize))
+                { cerr << "Missing or invalid argument for -b" << endl; return 1; }
+                ++i;
+            }
+            else if (a == "-k")
+            {
+                if (i + 1 >= argc || !parse_positive_int(argv[i + 1], opts.kmerSize))
+                { cerr << "Missing or invalid argument for -k" << endl; return 1; }
+                ++i;
+            }
+            else if (a == "-t")
+            {
+                if (i + 1 >= argc) { cerr << "Missing argument for -t" << endl; return 1; }
+                ++i;
+                char *end = NULL;
+                long v = strtol(argv[i], &end, 10);
+                if (*end != '\0' || v < 0 || v > INT_MAX)
+                { cerr << "Invalid argument for -t (must be a non-negative integer)" << endl; return 1; }
+                opts.minFreqTarget = static_cast<int>(v);
+            }
+            else if (a == "-n")
+            {
+                if (i + 1 >= argc || !parse_positive_int(argv[i + 1], opts.numThreads))
+                { cerr << "Missing or invalid argument for -n" << endl; return 1; }
+                ++i;
+            }
+            else if (a == "-d")
+            {
+                if (i + 1 >= argc || !parse_positive_int(argv[i + 1], opts.numDevices))
+                { cerr << "Missing or invalid argument for -d" << endl; return 1; }
+                ++i;
+            }
+            else if (a == "-g")
+            {
+                if (i + 1 >= argc || !parse_positive_int(argv[i + 1], opts.gapIteration))
+                { cerr << "Missing or invalid argument for -g" << endl; return 1; }
+                ++i;
+            }
+            else if (a == "-s")
+            {
+                if (i + 1 >= argc) { cerr << "Missing argument for -s" << endl; return 1; }
+                opts.samplingFactor = argv[++i];
+            }
+            else if (a == "--tsk")     opts.tsk = true;
+            else if (a == "--extended") opts.extended = true;
+            else if (a == "--gzipped") opts.gzipped = true;
+            else if (a == "--verbose") opts.verbose = true;
+            else
+            {
+                cerr << "Unknown classify option: " << a << endl;
+                cerr << "Usage: " << argv[0] << " -c -O <fastq> -R <result> [options]" << endl;
+                return 1;
+            }
+        }
+
+        if (!seenInput)
+        {
+            cerr << "Classification requires -O <fastq> or -P <file1> <file2>" << endl;
+            return 1;
+        }
+        if (!seenResult)
+        {
+            cerr << "Classification requires -R <resultFile>" << endl;
+            return 1;
+        }
+        return handle_classification(opts);
+    }
+
+    if (arg == "-a")
+    {
+        if (argc < 4)
+        {
+            cerr << "Usage: " << argv[0] << " -a <database_path> <result_file> [-o <output_file>]" << endl;
+            cerr << "  <result_file> is the .csv file produced by classification (e.g. results/result.csv)" << endl;
+            return 1;
+        }
+        string abundOutFile = "results/abundance_result.csv";
+        for (int i = 4; i < argc; ++i)
+        {
+            if (string(argv[i]) == "-o" && i + 1 < argc)
+            {
+                string userFile = argv[++i];
+                if (userFile.find('/') == string::npos)
+                    abundOutFile = "results/" + userFile;
+                else
+                    abundOutFile = userFile;
+            }
+        }
+        return handle_abundance(argv[2], argv[3], abundOutFile);
+    }
+
+    if (arg == "-m")
+    {
+        vector<string> mergeFiles;
+        string mergeOutput = "results/abundance_merged.csv";
+
+        for (int i = 2; i < argc; ++i)
+        {
+            string a(argv[i]);
+            if (a == "-o")
+            {
+                if (i + 1 >= argc) { cerr << "Missing argument for -o" << endl; return 1; }
+                string userFile = argv[++i];
+                if (userFile.find('/') == string::npos)
+                    mergeOutput = "results/" + userFile;
+                else
+                    mergeOutput = userFile;
+            }
+            else
+            {
+                mergeFiles.push_back(a);
+            }
+        }
+
+        if (mergeFiles.size() < 2)
+        {
+            cerr << "Usage: " << argv[0] << " -m <file1> <file2> [file3 ...] [-o <output>]" << endl;
+            cerr << "At least 2 abundance files are required." << endl;
+            return 1;
+        }
+
+        return handle_merge(mergeFiles, mergeOutput);
+    }
+
+    if (arg == "-r")
+    {
+        string reportInput = "results/abundance_result.csv";
+        if (argc > 2)
+        {
+            string userFile = argv[2];
+            if (userFile.find('/') == string::npos)
+                reportInput = "results/" + userFile;
+            else
+                reportInput = userFile;
+        }
+        return handle_report(reportInput);
+    }
+
+    cerr << "Unknown argument: " << arg << endl;
+    cerr << "Usage: " << argv[0] << " -v | -d <database_path> | -c -O <fastq> -R <result> [options] | -a <database_path> <result_file> [-o <output>] | -m <f1> <f2> [...] | -r [<abundance_file>]" << endl;
+    return 1;
+}

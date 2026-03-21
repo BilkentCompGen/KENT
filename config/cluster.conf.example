@@ -1,0 +1,57 @@
+# CuCLARK MPI Cluster Configuration (INI format)
+# Copy this file to cluster.conf and modify for your setup.
+#
+# This configuration uses pure MPI for parallel execution.
+# Requires passwordless SSH between all nodes.
+
+[cluster]
+# Master node hostname (coordinator)
+master = master-node
+# Worker node hostnames (comma-separated)
+workers = worker-a, worker-b
+
+[paths]
+# Directory where jn_cuclark is installed (must be identical on all nodes)
+cuclark_dir = /path/to/jn_cuclark
+# Database directory (contains Custom/ and taxonomy/)
+database = /path/to/cuclark_db
+# Results directory (relative to cuclark_dir or absolute)
+results_dir = results
+
+[reads]
+# Each node specifies its local FASTQ file(s).
+# Single-end: hostname = /path/to/reads.fastq
+# Paired-end: hostname = /path/to/R1.fastq, /path/to/R2.fastq
+master-node = /path/to/reads/master-node.fastq
+worker-a = /path/to/reads/worker-a_R1.fastq, /path/to/reads/worker-a_R2.fastq
+worker-b = /path/to/reads/worker-b.fastq
+
+[classification]
+# Number of batches for GPU processing (increase if out of GPU memory)
+batch_size = 32
+# K-mer size (default: 31)
+kmer_size = 31
+# Optional classification parameters (uncomment to override defaults):
+# min_freq_target = 0
+# num_threads = 1
+# num_devices = 1
+# gap_iteration = 4
+# sampling_factor = 0.1
+# tsk = false
+# extended = false
+# gzipped = false
+# verbose = false
+
+[options]
+# Should master node also process reads (or just coordinate)?
+master_processes_reads = true
+# Keep results on worker nodes (recommended for data safety)
+keep_local_results = true
+
+[logging]
+# Log level: debug, info, warn, error
+level = info
+# Log file (relative to cuclark_dir/logs/ or absolute)
+file = cluster_run.log
+# Show real-time progress
+show_progress = true
