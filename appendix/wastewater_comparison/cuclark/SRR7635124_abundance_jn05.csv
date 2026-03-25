@@ -1,0 +1,19 @@
+Name,TaxID,Lineage,Count,Proportion_All(%),Proportion_Classified(%)
+Acinetobacter baumannii,470,Bacteria;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Acinetobacter,128,0.03,0.04
+Clostridium tetani,1513,Bacteria;Bacillota;Clostridia;Eubacteriales;Clostridiaceae;Clostridium,3,0.00,0.00
+Coccidioides immitis,5501,Eukaryota;Ascomycota;Eurotiomycetes;Onygenales;Onygenaceae;Coccidioides,3620,0.78,1.09
+Enterobacter cloacae,550,Bacteria;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Enterobacter,7157,1.55,2.16
+Escherichia coli,562,Bacteria;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Escherichia,309342,67.01,93.44
+Giardia intestinalis,5741,Eukaryota;Fornicata;;Diplomonadida;Hexamitidae;Giardia,1,0.00,0.00
+Haemophilus influenzae,727,Bacteria;Pseudomonadota;Gammaproteobacteria;Pasteurellales;Pasteurellaceae;Haemophilus,60,0.01,0.02
+Helicobacter pylori,210,Bacteria;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Helicobacteraceae;Helicobacter,1,0.00,0.00
+Listeria monocytogenes,1639,Bacteria;Bacillota;Bacilli;Bacillales;Listeriaceae;Listeria,7,0.00,0.00
+Moraxella catarrhalis,480,Bacteria;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Moraxella,18,0.00,0.01
+Mycobacterium tuberculosis,1773,Bacteria;Actinomycetota;Actinomycetes;Mycobacteriales;Mycobacteriaceae;Mycobacterium,6,0.00,0.00
+Plasmodium falciparum,5833,Eukaryota;Apicomplexa;Aconoidasida;Haemosporida;Plasmodiidae;Plasmodium,4145,0.90,1.25
+Pseudomonas aeruginosa,287,Bacteria;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Pseudomonas,380,0.08,0.11
+Salmonella enterica,28901,Bacteria;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Salmonella,5759,1.25,1.74
+Staphylococcus aureus,1280,Bacteria;Bacillota;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus,12,0.00,0.00
+Streptococcus pneumoniae,1313,Bacteria;Bacillota;Bacilli;Lactobacillales;Streptococcaceae;Streptococcus,57,0.01,0.02
+Vibrio cholerae,666,Bacteria;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,375,0.08,0.11
+UNKNOWN,UNKNOWN,UNKNOWN,130578,28.29,-

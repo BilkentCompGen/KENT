@@ -1,0 +1,20 @@
+Name,TaxID,Lineage,Count,Proportion_All(%),Proportion_Classified(%)
+Acinetobacter baumannii,470,Bacteria;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Acinetobacter,370,0.0440668,0.881099
+Clostridium tetani,1513,Bacteria;Bacillota;Clostridia;Eubacteriales;Clostridiaceae;Clostridium,113,0.0134582,0.269092
+Coccidioides immitis,5501,Eukaryota;Ascomycota;Eurotiomycetes;Onygenales;Onygenaceae;Coccidioides,16028,1.90893,38.1683
+Enterobacter cloacae,550,Bacteria;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Enterobacter,266,0.0316805,0.633439
+Escherichia coli,562,Bacteria;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Escherichia,869,0.103497,2.06939
+Giardia intestinalis,5741,Eukaryota;Fornicata;;Diplomonadida;Hexamitidae;Giardia,22,0.00262019,0.0523897
+Haemophilus influenzae,727,Bacteria;Pseudomonadota;Gammaproteobacteria;Pasteurellales;Pasteurellaceae;Haemophilus,138,0.0164357,0.328626
+Helicobacter pylori,210,Bacteria;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Helicobacteraceae;Helicobacter,29,0.00345389,0.0690591
+Listeria monocytogenes,1639,Bacteria;Bacillota;Bacilli;Bacillales;Listeriaceae;Listeria,112,0.0133391,0.266711
+Moraxella catarrhalis,480,Bacteria;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Moraxella,111,0.01322,0.26433
+Mycobacterium tuberculosis,1773,Bacteria;Actinomycetota;Actinomycetes;Mycobacteriales;Mycobacteriaceae;Mycobacterium,282,0.0335861,0.67154
+Orientia tsutsugamushi,784,Bacteria;Pseudomonadota;Alphaproteobacteria;Rickettsiales;Rickettsiaceae;Orientia,16,0.00190559,0.0381016
+Plasmodium falciparum,5833,Eukaryota;Apicomplexa;Aconoidasida;Haemosporida;Plasmodiidae;Plasmodium,22587,2.6901,53.7875
+Pseudomonas aeruginosa,287,Bacteria;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Pseudomonas,568,0.0676485,1.35261
+Salmonella enterica,28901,Bacteria;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Salmonella,198,0.0235817,0.471507
+Staphylococcus aureus,1280,Bacteria;Bacillota;Bacilli;Bacillales;Staphylococcaceae;Staphylococcus,83,0.00988526,0.197652
+Streptococcus pneumoniae,1313,Bacteria;Bacillota;Bacilli;Lactobacillales;Streptococcaceae;Streptococcus,14,0.00166739,0.0333389
+Vibrio cholerae,666,Bacteria;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,187,0.0222716,0.445312
+UNKNOWN,UNKNOWN,UNKNOWN,797641,94.9987,-

@@ -1,0 +1,20 @@
+Name,Count (SRR7635124_abundance_jn05),Count (SRR7635124_light_abundance_jn00),Count (diff),Proportion_All(%) (SRR7635124_abundance_jn05),Proportion_All(%) (SRR7635124_light_abundance_jn00),Proportion_All(%) (diff),Proportion_Classified(%) (SRR7635124_abundance_jn05),Proportion_Classified(%) (SRR7635124_light_abundance_jn00),Proportion_Classified(%) (diff)
+Acinetobacter baumannii,128,129,+1,0.03,0.0279433,-0.0020567,0.04,0.0380434,-0.0019566
+Clostridium tetani,3,3,+0,0,0.000649844,+0.000649844,0,0.000884731,+0.000884731
+Coccidioides immitis,3620,3985,+365,0.78,0.86321,+0.08321,1.09,1.17522,+0.08522
+Enterobacter cloacae,7157,6959,-198,1.55,1.50742,-0.04258,2.16,2.05228,-0.10772
+Escherichia coli,309342,318137,+8795,67.01,68.9132,+1.9032,93.44,93.8219,+0.3819
+Giardia intestinalis,1,N/A,N/A,0,N/A,N/A,0,N/A,N/A
+Haemophilus influenzae,60,100,+40,0.01,0.0216615,+0.0116615,0.02,0.029491,+0.009491
+Helicobacter pylori,1,2,+1,0,0.00043323,+0.00043323,0,0.000589821,+0.000589821
+Listeria monocytogenes,7,4,-3,0,0.000866459,+0.000866459,0,0.00117964,+0.00117964
+Moraxella catarrhalis,18,10,-8,0,0.00216615,+0.00216615,0.01,0.0029491,-0.0070509
+Mycobacterium tuberculosis,6,6,+0,0,0.00129969,+0.00129969,0,0.00176946,+0.00176946
+Orientia tsutsugamushi,N/A,1,N/A,N/A,0.000216615,N/A,N/A,0.00029491,N/A
+Plasmodium falciparum,4145,4131,-14,0.9,0.894836,-0.005164,1.25,1.21828,-0.03172
+Pseudomonas aeruginosa,380,503,+123,0.08,0.108957,+0.028957,0.11,0.14834,+0.03834
+Salmonella enterica,5759,4578,-1181,1.25,0.991662,-0.258338,1.74,1.3501,-0.3899
+Staphylococcus aureus,12,10,-2,0,0.00216615,+0.00216615,0,0.0029491,+0.0029491
+Streptococcus pneumoniae,57,56,-1,0.01,0.0121304,+0.0021304,0.02,0.016515,-0.003485
+UNKNOWN,130578,122563,-8015,28.29,26.549,-1.741,-,-,N/A
+Vibrio cholerae,375,472,+97,0.08,0.102242,+0.022242,0.11,0.139198,+0.029198

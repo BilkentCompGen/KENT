@@ -1,0 +1,498 @@
+Name,TaxID,Lineage,Count,Proportion_All(%),Proportion_Classified(%)
+Acetivibrio thermocellus,1515,cellular organisms;Bacillota;Clostridia;Acetivibrionales;Acetivibrionaceae;Acetivibrio,141,0.00855427,0.0759686
+Acidobacteria bacterium Mor1,1660251,cellular organisms;Acidobacteriota;;;;,5,0.000303343,0.00269392
+Aciduliprofundum sp. MAR08-339,673860,cellular organisms;Thermoplasmatota;;;;Candidatus Aciduliprofundum,67,0.0040648,0.0360986
+Acinetobacter venetianus,52133,cellular organisms;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Acinetobacter,249,0.0151065,0.134157
+Actibacterium sp. EMB200-NS6,1609966,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Actibacterium,242,0.0146818,0.130386
+Actinoalloteichus fjordicus,1612552,cellular organisms;Actinomycetota;Actinomycetes;Pseudonocardiales;Pseudonocardiaceae;Actinoalloteichus,371,0.0225081,0.199889
+Actinoalloteichus hymeniacidonis,340345,cellular organisms;Actinomycetota;Actinomycetes;Pseudonocardiales;Pseudonocardiaceae;Actinoalloteichus,12,0.000728023,0.00646541
+Actinoalloteichus sp. GBA129-24,1612551,cellular organisms;Actinomycetota;Actinomycetes;Pseudonocardiales;Pseudonocardiaceae;Actinoalloteichus,348,0.0211127,0.187497
+Aeromonas salmonicida,645,cellular organisms;Pseudomonadota;Gammaproteobacteria;Aeromonadales;Aeromonadaceae;Aeromonas,672,0.0407693,0.362063
+Aeropyrum camini,229980,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Aeropyrum,8,0.000485349,0.00431028
+Aeropyrum pernix,56636,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Aeropyrum,16,0.000970698,0.00862055
+Agarivorans gilvus,680279,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Agarivorans,314,0.0190499,0.169178
+Agrococcus jejuensis,399736,cellular organisms;Actinomycetota;Actinomycetes;Micrococcales;Microbacteriaceae;Agrococcus,50,0.00303343,0.0269392
+Alcanivorax borkumensis,59754,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Alcanivoracaceae;Alcanivorax,41,0.00248741,0.0220902
+Aliivibrio fischeri,668,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Aliivibrio,532,0.0322757,0.286633
+Aliivibrio salmonicida,40269,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Aliivibrio,3708,0.224959,1.99781
+Aliivibrio wodanis,80852,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Aliivibrio,1930,0.11709,1.03985
+Alloalcanivorax dieselolei,285091,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Alcanivoracaceae;Alloalcanivorax,67,0.0040648,0.0360986
+Altererythrobacter epoxidivorans,361183,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Altererythrobacter,38,0.00230541,0.0204738
+Altererythrobacter ishigakiensis,476157,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Altererythrobacter,57,0.00345811,0.0307107
+Alteromonas australica,589873,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas,279,0.0169265,0.150321
+Alteromonas macleodii,28108,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas,1716,0.104107,0.924554
+Alteromonas mediterranea,314275,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas,19961,1.21101,10.7547
+Alteromonas naphthalenivorans,715451,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas,58,0.00351878,0.0312495
+Alteromonas sp. Mex14,1917157,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas,116,0.00703756,0.062499
+Alteromonas sp. RW2A1,1917158,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas,331,0.0200813,0.178338
+Alteromonas stellipolaris,233316,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Alteromonas,307,0.0186253,0.165407
+Aquibium oceanicum,1670800,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Phyllobacteriaceae;Aquibium,77,0.00467148,0.0414864
+Arcanobacterium phocae,131112,cellular organisms;Actinomycetota;Actinomycetes;Actinomycetales;Actinomycetaceae;Arcanobacterium,16,0.000970698,0.00862055
+Archaeoglobus fulgidus,2234,cellular organisms;Methanobacteriota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Archaeoglobus,486,0.0294849,0.261849
+Archaeoglobus profundus,84156,cellular organisms;Methanobacteriota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Archaeoglobus,14,0.00084936,0.00754298
+Archaeoglobus veneficus,58290,cellular organisms;Methanobacteriota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Archaeoglobus,2,0.000121337,0.00107757
+Arthrobacter sp. PAMC 25486,1494608,cellular organisms;Actinomycetota;Actinomycetes;Micrococcales;Micrococcaceae;Arthrobacter,7,0.00042468,0.00377149
+Aurantiacibacter atlanticus,1648404,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Aurantiacibacter,7,0.00042468,0.00377149
+Aurantiacibacter gangjinensis,502682,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Aurantiacibacter,59,0.00357945,0.0317883
+Bacillus infantis,324767,cellular organisms;Bacillota;Bacilli;Bacillales;Bacillaceae;Bacillus,336,0.0203847,0.181032
+Bacillus safensis,561879,cellular organisms;Bacillota;Bacilli;Bacillales;Bacillaceae;Bacillus,161,0.00976765,0.0867443
+Bacillus sp. Pc3,1446792,cellular organisms;Bacillota;Bacilli;Bacillales;Bacillaceae;Bacillus,65,0.00394346,0.035021
+Bacillus velezensis,492670,cellular organisms;Bacillota;Bacilli;Bacillales;Bacillaceae;Bacillus,88,0.00533884,0.047413
+Bacillus weihaiensis,1547283,cellular organisms;Bacillota;Bacilli;Bacillales;Bacillaceae;Bacillus,11,0.000667355,0.00592663
+Bdellovibrio bacteriovorus,959,cellular organisms;Bdellovibrionota;Bdellovibrionia;Bdellovibrionales;Pseudobdellovibrionaceae;Bdellovibrio,267,0.0161985,0.143855
+Belliella baltica,232259,cellular organisms;Bacteroidota;Cytophagia;Cytophagales;Cyclobacteriaceae;Belliella,153,0.0092823,0.082434
+Bernardetia litoralis,999,cellular organisms;Bacteroidota;Cytophagia;Cytophagales;Bernardetiaceae;Bernardetia,294,0.0178366,0.158403
+Brucella ceti,120577,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Brucellaceae;Brucella,498,0.030213,0.268315
+Brucella pinnipedialis,120576,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Brucellaceae;Brucella,269,0.0163199,0.144933
+Brucella sp. 141012304,1885919,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Brucellaceae;Brucella,205,0.0124371,0.110451
+Brumicola nitratireducens,300231,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Brumicola,708,0.0429534,0.381459
+Caldithrix abyssi,187145,cellular organisms;Calditrichota;Calditrichia;Calditrichales;Calditrichaceae;Caldithrix,102,0.0061882,0.054956
+Campylobacter lari,201,cellular organisms;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Campylobacteraceae;Campylobacter,14,0.00084936,0.00754298
+Campylobacter peloridis,488546,cellular organisms;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Campylobacteraceae;Campylobacter,6,0.000364012,0.00323271
+Candidatus Aciduliprofundum boonei,379547,cellular organisms;Thermoplasmatota;;;;Candidatus Aciduliprofundum,6,0.000364012,0.00323271
+Candidatus Aquiluna sp. UB-MaderosW2red,1855377,cellular organisms;Actinomycetota;Actinomycetes;Micrococcales;Microbacteriaceae;Aquiluna,10,0.000606686,0.00538784
+Candidatus Atelocyanobacterium thalassae,713887,cellular organisms;Cyanobacteriota;Cyanophyceae;Chroococcales;Aphanothecaceae;Candidatus Atelocyanobacterium,141,0.00855427,0.0759686
+Candidatus Cenarchaeum symbiosum,46770,cellular organisms;Nitrososphaerota;;Candidatus Cenarchaeales;Candidatus Cenarchaeaceae;Candidatus Cenarchaeum,48,0.00291209,0.0258617
+Candidatus Endolissoclinum faulkneri,1263979,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodospirillales;Rhodospirillaceae;Candidatus Endolissoclinum,1151,0.0698296,0.620141
+Candidatus Filomicrobium marinum,1608628,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Hyphomicrobiaceae;Filomicrobium,63,0.00382212,0.0339434
+Candidatus Francisella endociliophora,653937,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Francisellaceae;Francisella,25,0.00151672,0.0134696
+Candidatus Izimoplasma sp. HR1,1541959,cellular organisms;Mycoplasmatota;Mollicutes;Candidatus Izemoplasmatales;Candidatus Izemoplasmataceae;Candidatus Izemoplasma,216,0.0131044,0.116377
+Candidatus Nitrosopelagicus brevis,1410606,cellular organisms;Nitrososphaerota;;;;Candidatus Nitrosopelagicus,129,0.00782625,0.0695032
+Candidatus Nitrosopumilus koreensis,1510466,cellular organisms;Nitrososphaerota;Nitrososphaeria;Nitrosopumilales;Nitrosopumilaceae;Nitrosopumilus,28,0.00169872,0.015086
+Candidatus Nitrosopumilus sediminis,1229909,cellular organisms;Nitrososphaerota;Nitrososphaeria;Nitrosopumilales;Nitrosopumilaceae;Nitrosopumilus,273,0.0165625,0.147088
+Candidatus Pelagibacter communis,198252,cellular organisms;Pseudomonadota;Alphaproteobacteria;Candidatus Pelagibacterales;Candidatus Pelagibacteraceae;Candidatus Pelagibacter,7,0.00042468,0.00377149
+Candidatus Pelagibacter sp. IMCC9063,1002672,cellular organisms;Pseudomonadota;Alphaproteobacteria;Candidatus Pelagibacterales;Candidatus Pelagibacteraceae;Candidatus Pelagibacter,2,0.000121337,0.00107757
+Candidatus Pseudothioglobus singularis,1427364,cellular organisms;Pseudomonadota;Gammaproteobacteria;;Candidatus Pseudothioglobaceae;Candidatus Pseudothioglobus,83,0.00503549,0.0447191
+Candidatus Puniceispirillum marinum,767892,cellular organisms;Pseudomonadota;Alphaproteobacteria;Candidatus Puniceispirillales;Candidatus Puniceispirillaceae;Candidatus Puniceispirillum,1,6.06686e-05,0.000538784
+Candidatus Ruthturnera calyptogenae,386487,cellular organisms;Pseudomonadota;Gammaproteobacteria;;Candidatus Pseudothioglobaceae;Candidatus Ruthturnera,23,0.00139538,0.012392
+Candidatus Thioglobus autotrophicus,1705394,cellular organisms;Pseudomonadota;Gammaproteobacteria;;Candidatus Pseudothioglobaceae;Candidatus Thioglobus,5,0.000303343,0.00269392
+Candidatus Vesicomyidisocius calyptogenae,412965,cellular organisms;Pseudomonadota;Gammaproteobacteria;;Candidatus Pseudothioglobaceae;Candidatus Vesicomyidisocius,1,6.06686e-05,0.000538784
+Carnobacterium sp. 17-4,208596,cellular organisms;Bacillota;Bacilli;Lactobacillales;Carnobacteriaceae;Carnobacterium,5,0.000303343,0.00269392
+Celeribacter indicus,1208324,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Celeribacter,156,0.0094643,0.0840504
+Celeribacter marinus,1397108,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Celeribacter,86,0.0052175,0.0463355
+Cellulophaga algicola,59600,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Cellulophaga,148,0.00897895,0.0797401
+Cellulophaga baltica,76594,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Cellulophaga,378,0.0229327,0.203661
+Cellulophaga lytica,979,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Cellulophaga,851,0.051629,0.458506
+Cereibacter sphaeroides,1063,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Paracoccaceae;Cereibacter,77,0.00467148,0.0414864
+Chlorobium phaeobacteroides,1096,cellular organisms;Chlorobiota;Chlorobiia;Chlorobiales;Chlorobiaceae;Chlorobium,8,0.000485349,0.00431028
+Chlorobium phaeovibrioides,1094,cellular organisms;Chlorobiota;Chlorobiia;Chlorobiales;Chlorobiaceae;Chlorobium,57,0.00345811,0.0307107
+Chloroherpeton thalassium,100716,cellular organisms;Chlorobiota;Chlorobiia;Chlorobiales;Chloroherpetonaceae;Chloroherpeton,246,0.0149245,0.132541
+Christiangramia forsetii,411153,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Christiangramia,13,0.000788692,0.0070042
+Christiangramia salexigens,1913577,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Christiangramia,9,0.000546017,0.00484906
+Chromohalobacter israelensis,141390,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Halomonadaceae;Chromohalobacter,60,0.00364012,0.0323271
+Citromicrobium sp. JL477,1634516,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Citromicrobium,38,0.00230541,0.0204738
+Clostridium botulinum,1491,cellular organisms;Bacillota;Clostridia;Eubacteriales;Clostridiaceae;Clostridium,1093,0.0663108,0.588891
+Colwellia psychrerythraea,28229,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Colwelliaceae;Colwellia,629,0.0381606,0.338895
+Colwellia sp. MT41,58049,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Colwelliaceae;Colwellia,321,0.0194746,0.17295
+Colwellia sp. PAMC 20917,1816218,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Colwelliaceae;Colwellia,114,0.00691622,0.0614214
+Coraliomargarita akajimensis,395922,cellular organisms;Verrucomicrobiota;Opitutia;Puniceicoccales;Coraliomargaritaceae;Coraliomargarita,5,0.000303343,0.00269392
+Corallococcus macrosporus,35,cellular organisms;Myxococcota;Myxococcia;Myxococcales;Myxococcaceae;Corallococcus,181,0.010981,0.09752
+Corynebacterium marinum,349751,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Corynebacteriaceae;Corynebacterium,43,0.00260875,0.0231677
+Corynebacterium maris,575200,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Corynebacteriaceae;Corynebacterium,28,0.00169872,0.015086
+Corynebacterium phocae,161895,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Corynebacteriaceae;Corynebacterium,376,0.0228114,0.202583
+Corynebacterium sphenisci,191493,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Corynebacteriaceae;Corynebacterium,10,0.000606686,0.00538784
+Corynebacterium stationis,1705,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Corynebacteriaceae;Corynebacterium,148,0.00897895,0.0797401
+Croceibacter atlanticus,313588,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Croceibacter,61,0.00370078,0.0328658
+Croceibacterium atlanticum,1267766,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Croceibacterium,43,0.00260875,0.0231677
+Croceicoccus naphthovorans,1348774,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Croceicoccus,61,0.00370078,0.0328658
+Crocosphaera subtropica,2546360,cellular organisms;Cyanobacteriota;Cyanophyceae;Chroococcales;Aphanothecaceae;Crocosphaera,3,0.000182006,0.00161635
+Cupriavidus malaysiensis,367825,cellular organisms;Pseudomonadota;Betaproteobacteria;Burkholderiales;Burkholderiaceae;Cupriavidus,296,0.0179579,0.15948
+Cyclobacterium amurskyense,320787,cellular organisms;Bacteroidota;Cytophagia;Cytophagales;Cyclobacteriaceae;Cyclobacterium,143,0.00867561,0.0770462
+Cyclobacterium marinum,104,cellular organisms;Bacteroidota;Cytophagia;Cytophagales;Cyclobacteriaceae;Cyclobacterium,56,0.00339744,0.0301719
+Cycloclasticus sp. P1,385025,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Piscirickettsiaceae;Cycloclasticus,2117,0.128435,1.14061
+Cycloclasticus zancles,1329899,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Piscirickettsiaceae;Cycloclasticus,2421,0.146879,1.3044
+Denitrovibrio acetiphilus,118000,cellular organisms;Deferribacterota;Deferribacteres;Deferribacterales;Geovibrionaceae;Denitrovibrio,59,0.00357945,0.0317883
+Desulfobacula toluolica,28223,cellular organisms;Thermodesulfobacteriota;Desulfobacteria;Desulfobacterales;Desulfobacteraceae;Desulfobacula,1819,0.110356,0.980049
+Desulfocapsa sulfexigens,65555,cellular organisms;Thermodesulfobacteriota;Desulfobulbia;Desulfobulbales;Desulfocapsaceae;Desulfocapsa,367,0.0222654,0.197734
+Desulfococcus multivorans,897,cellular organisms;Thermodesulfobacteriota;Desulfobacteria;Desulfobacterales;Desulfococcaceae;Desulfococcus,794,0.0481709,0.427795
+Desulfocurvibacter africanus,873,cellular organisms;Thermodesulfobacteriota;Desulfovibrionia;Desulfovibrionales;Desulfovibrionaceae;Desulfocurvibacter,446,0.0270582,0.240298
+Desulforamulus reducens,59610,cellular organisms;Bacillota;Clostridia;Eubacteriales;Peptococcaceae;Desulforamulus,4,0.000242674,0.00215514
+Desulforapulum autotrophicum,2296,cellular organisms;Thermodesulfobacteriota;Desulfobacteria;Desulfobacterales;Desulfobacteraceae;Desulforapulum,1379,0.083662,0.742984
+Desulfotalea psychrophila,84980,cellular organisms;Thermodesulfobacteriota;Desulfobulbia;Desulfobulbales;Desulfocapsaceae;Desulfotalea,1043,0.0632774,0.561952
+Dinoroseobacter shibae,215813,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Dinoroseobacter,49,0.00297276,0.0264004
+Dokdonia donghaensis,326320,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Dokdonia,74,0.00448948,0.03987
+Dokdonia sp. 4H-3-7-5,983548,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Dokdonia,40,0.00242674,0.0215514
+Dokdonia sp. MED134,313590,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Dokdonia,27,0.00163805,0.0145472
+Dokdonia sp. PRO95,1239415,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Dokdonia,13,0.000788692,0.0070042
+Draconibacterium orientale,1168034,cellular organisms;Bacteroidota;Bacteroidia;Marinilabiliales;Prolixibacteraceae;Draconibacterium,65,0.00394346,0.035021
+Echinicola vietnamensis,390884,cellular organisms;Bacteroidota;Cytophagia;Cytophagales;Cyclobacteriaceae;Echinicola,85,0.00515683,0.0457967
+Edwardsiella anguillarum,1821960,cellular organisms;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Hafniaceae;Edwardsiella,64,0.00388279,0.0344822
+Edwardsiella piscicida,1263550,cellular organisms;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Hafniaceae;Edwardsiella,331,0.0200813,0.178338
+Erythrobacter litoralis,39960,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Erythrobacter,1433,0.0869381,0.772078
+Ferrimonas balearica,44012,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Ferrimonadaceae;Ferrimonas,8,0.000485349,0.00431028
+Ferroglobus placidus,54261,cellular organisms;Methanobacteriota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Ferroglobus,1,6.06686e-05,0.000538784
+Fervidobacterium pennivorans,93466,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Fervidobacteriaceae;Fervidobacterium,3,0.000182006,0.00161635
+Fibrella aestuarina,651143,cellular organisms;Bacteroidota;Cytophagia;Cytophagales;Spirosomataceae;Fibrella,1,6.06686e-05,0.000538784
+Flagellimonas lutaonensis,516051,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Flagellimonas,570,0.0345811,0.307107
+Flagellimonas ruestringensis,111501,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Flagellimonas,250,0.0151672,0.134696
+Flammeovirga sp. MY04,1191459,cellular organisms;Bacteroidota;Cytophagia;Cytophagales;Flammeovirgaceae;Flammeovirga,1536,0.093187,0.827573
+Flavobacteriaceae bacterium MAR_2010_188,1250295,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;,73,0.00442881,0.0393313
+Flavobacteriaceae bacterium UJ101,1150389,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;,64,0.00388279,0.0344822
+Flavobacterium crassostreae,1763534,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Flavobacterium,108,0.00655221,0.0581887
+Flavobacterium psychrophilum,96345,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Flavobacterium,2533,0.153674,1.36474
+Flexistipes sinusarabici,2352,cellular organisms;Deferribacterota;Deferribacteres;Deferribacterales;Flexistipitaceae;Flexistipes,3,0.000182006,0.00161635
+Formosa agariphila,320324,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Formosa,107,0.00649154,0.0576499
+Formosa haliotis,1555194,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Formosa,917,0.0556331,0.494065
+Formosa sp. Hel1_33_131,1336794,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Formosa,8,0.000485349,0.00431028
+Formosa sp. Hel3_A1_48,1336795,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Formosa,126,0.00764424,0.0678868
+Francisella orientalis,299583,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Francisellaceae;Francisella,99,0.00600619,0.0533397
+Francisella uliginis,573570,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Francisellaceae;Francisella,24,0.00145605,0.0129308
+Geobacillus kaustophilus,1462,cellular organisms;Bacillota;Bacilli;Bacillales;Anoxybacillaceae;Geobacillus,160,0.00970698,0.0862055
+Geoglobus acetivorans,565033,cellular organisms;Methanobacteriota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Geoglobus,14,0.00084936,0.00754298
+Geoglobus ahangari,113653,cellular organisms;Methanobacteriota;Archaeoglobi;Archaeoglobales;Archaeoglobaceae;Geoglobus,8,0.000485349,0.00431028
+Gillisia sp. Hel1_33_143,1336796,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Gillisia,31,0.00188073,0.0167023
+Glaciecola sp. 4H-3-7+YE-5,983545,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Glaciecola,343,0.0208093,0.184803
+Gloeomargarita lithophora,1188228,cellular organisms;Cyanobacteriota;Cyanophyceae;Gloeomargaritales;Gloeomargaritaceae;Gloeomargarita,393,0.0238428,0.211742
+Gramella sp. MAR_2010_102,1250231,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Christiangramia,216,0.0131044,0.116377
+Gramella sp. MAR_2010_147,1250205,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Christiangramia,17,0.00103137,0.00915933
+Hahella chejuensis,158327,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Hahellaceae;Hahella,499,0.0302736,0.268853
+Haliangium ochraceum,80816,cellular organisms;Myxococcota;;Haliangiales;Kofleriaceae;Haliangium,9,0.000546017,0.00484906
+Haloarcula hispanica,51589,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Haloarculaceae;Haloarcula,26,0.00157738,0.0140084
+Haloarcula sp. CBA1115,1592728,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Haloarculaceae;Haloarcula,17,0.00103137,0.00915933
+Halobacteriovorax marinus,97084,cellular organisms;Bdellovibrionota;Bacteriovoracia;Bacteriovoracales;Halobacteriovoraceae;Halobacteriovorax,137,0.0083116,0.0738135
+Halodesulfurarchaeum formicicum,1873524,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Halobacteriaceae;Halodesulfurarchaeum,36,0.00218407,0.0193962
+Haloferax gibbonsii,35746,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Haloferacaceae;Haloferax,3,0.000182006,0.00161635
+Haloferax mediterranei,2252,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Haloferacaceae;Haloferax,84,0.00509616,0.0452579
+Halogeometricum borinquense,60847,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Haloferacaceae;Halogeometricum,27,0.00163805,0.0145472
+Halolamina sediminis,1480675,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Haloferacaceae;Halolamina,19,0.0011527,0.0102369
+Halomonas aestuarii,1897729,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Halomonadaceae;Halomonas,525,0.031851,0.282862
+Halomonas elongata,2746,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Halomonadaceae;Halomonas,24,0.00145605,0.0129308
+Halomonas sp. A3H3,1346287,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Halomonadaceae;Halomonas,1226,0.0743797,0.66055
+Halomonas sp. R57-5,1610576,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Halomonadaceae;Halomonas,696,0.0422253,0.374994
+Halopseudomonas litoralis,797277,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Halopseudomonas,88,0.00533884,0.047413
+Haloquadratum walsbyi,293091,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Haloferacaceae;Haloquadratum,261,0.0158345,0.140623
+Halorhabdus tiamatea,430914,cellular organisms;Methanobacteriota;Halobacteria;Halobacteriales;Haloarculaceae;Halorhabdus,162,0.00982831,0.0872831
+Helicobacter cetorum,138563,cellular organisms;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Helicobacteraceae;Helicobacter,12,0.000728023,0.00646541
+Helicobacter enhydrae,222136,cellular organisms;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Helicobacteraceae;Helicobacter,57,0.00345811,0.0307107
+Hippea maritima,84405,cellular organisms;Campylobacterota;Desulfurellia;Desulfurellales;Hippeaceae;Hippea,13,0.000788692,0.0070042
+Hirschia baltica,2724,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomonadales;Hyphomonadaceae;Hirschia,44,0.00266942,0.0237065
+Hoeflea sp. IMCC20628,1620421,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Rhizobiaceae;Hoeflea,177,0.0107383,0.0953648
+Hydrogenophaga crassostreae,1763535,cellular organisms;Pseudomonadota;Betaproteobacteria;Burkholderiales;Comamonadaceae;Hydrogenophaga,544,0.0330037,0.293099
+Hydrogenovibrio crunogenus,39765,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Piscirickettsiaceae;Hydrogenovibrio,62,0.00376145,0.0334046
+Hyperthermus butylicus,54248,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Pyrodictiaceae;Hyperthermus,4067,0.246739,2.19124
+Hyphomicrobium nitrativorans,1427356,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Hyphomicrobiaceae;Hyphomicrobium,540,0.032761,0.290944
+Hyphomonas neptunium,81032,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomonadales;Hyphomonadaceae;Hyphomonas,734,0.0445308,0.395468
+Hyphomonas sp. Mor2,1906738,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomonadales;Hyphomonadaceae;Hyphomonas,82,0.00497483,0.0441803
+Idiomarina loihiensis,135577,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Idiomarinaceae;Idiomarina,15,0.000910029,0.00808177
+Ignicoccus hospitalis,160233,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Ignicoccus,15,0.000910029,0.00808177
+Ignicoccus islandicus,54259,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Ignicoccus,18,0.00109203,0.00969812
+Ilumatobacter coccineus,467094,cellular organisms;Actinomycetota;Acidimicrobiia;Acidimicrobiales;Ilumatobacteraceae;Ilumatobacter,1142,0.0692835,0.615292
+Ilyobacter polytropus,167642,cellular organisms;Fusobacteriota;Fusobacteriia;Fusobacteriales;Fusobacteriaceae;Ilyobacter,153,0.0092823,0.082434
+Isoalcanivorax pacificus,1306787,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Alcanivoracaceae;Isoalcanivorax,55,0.00333677,0.0296331
+Jannaschia sp. CCS1,290400,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Jannaschia,56,0.00339744,0.0301719
+Kangiella geojedonensis,914150,cellular organisms;Pseudomonadota;Gammaproteobacteria;Kangiellales;Kangiellaceae;Kangiella,88,0.00533884,0.047413
+Kangiella koreensis,261964,cellular organisms;Pseudomonadota;Gammaproteobacteria;Kangiellales;Kangiellaceae;Kangiella,38,0.00230541,0.0204738
+Kangiella sediminilitoris,1144748,cellular organisms;Pseudomonadota;Gammaproteobacteria;Kangiellales;Kangiellaceae;Kangiella,29,0.00175939,0.0156247
+Kiritimatiella glycovorans,1307763,cellular organisms;Kiritimatiellota;Kiritimatiellia;Kiritimatiellales;Kiritimatiellaceae;Kiritimatiella,3,0.000182006,0.00161635
+Kosmotoga olearia,651457,cellular organisms;Thermotogota;Thermotogae;Kosmotogales;Kosmotogaceae;Kosmotoga,56,0.00339744,0.0301719
+Kosmotoga pacifica,1330330,cellular organisms;Thermotogota;Thermotogae;Kosmotogales;Kosmotogaceae;Kosmotoga,1,6.06686e-05,0.000538784
+Kytococcus sedentarius,1276,cellular organisms;Actinomycetota;Actinomycetes;Micrococcales;Kytococcaceae;Kytococcus,25,0.00151672,0.0134696
+Lacimicrobium alkaliphilum,1526571,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Lacimicrobium,60,0.00364012,0.0323271
+Lacinutrix sp. 5H-3-7-4,983544,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Lacinutrix,1652,0.100225,0.890072
+Lactococcus garvieae,1363,cellular organisms;Bacillota;Bacilli;Lactobacillales;Streptococcaceae;Lactococcus,154,0.00934297,0.0829728
+Leisingera methylohalidivorans,133924,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Leisingera,231,0.0140144,0.124459
+Leuconostoc lactis,1246,cellular organisms;Bacillota;Bacilli;Lactobacillales;Lactobacillaceae;Leuconostoc,44,0.00266942,0.0237065
+Luteimonas sp. JM171,1896164,cellular organisms;Pseudomonadota;Gammaproteobacteria;Lysobacterales;Lysobacteraceae;Luteimonas,103,0.00624887,0.0554948
+Magnetococcus marinus,1124597,cellular organisms;Pseudomonadota;Magnetococcia;Magnetococcales;Magnetococcaceae;Magnetococcus,518,0.0314263,0.27909
+Magnetospira sp. QH-2,1288970,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodospirillales;Thalassospiraceae;Magnetospira,1197,0.0726203,0.644925
+Maribacter sp. 1_2014MBL_MicDiv,1644130,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Maribacter,257,0.0155918,0.138468
+Maribacter sp. HTCC2170,313603,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Maribacter,37,0.00224474,0.019935
+Maribacter sp. MAR_2009_60,1250153,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Maribacter,333,0.0202026,0.179415
+Maricaulis maris,74318,cellular organisms;Pseudomonadota;Alphaproteobacteria;Maricaulales;Maricaulaceae;Maricaulis,31,0.00188073,0.0167023
+Maridesulfovibrio hydrothermalis,191026,cellular organisms;Thermodesulfobacteriota;Desulfovibrionia;Desulfovibrionales;Desulfovibrionaceae;Maridesulfovibrio,587,0.0356125,0.316266
+Maridesulfovibrio salexigens,880,cellular organisms;Thermodesulfobacteriota;Desulfovibrionia;Desulfovibrionales;Desulfovibrionaceae;Maridesulfovibrio,14,0.00084936,0.00754298
+Marinithermus hydrothermalis,186192,cellular organisms;Deinococcota;Deinococci;Thermales;Thermaceae;Marinithermus,197,0.0119517,0.106141
+Marinitoga piezophila,149715,cellular organisms;Thermotogota;Thermotogae;Petrotogales;Petrotogaceae;Marinitoga,42,0.00254808,0.0226289
+Marinitoga sp. 1137,1545835,cellular organisms;Thermotogota;Thermotogae;Petrotogales;Petrotogaceae;Marinitoga,40,0.00242674,0.0215514
+Marinobacter adhaerens,1033846,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Marinobacteraceae;Marinobacter,22,0.00133471,0.0118533
+Marinobacter nauticus,2743,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Marinobacteraceae;Marinobacter,229,0.0138931,0.123382
+Marinobacter psychrophilus,330734,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Marinobacteraceae;Marinobacter,44,0.00266942,0.0237065
+Marinobacter salarius,1420917,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Marinobacteraceae;Marinobacter,306,0.0185646,0.164868
+Marinobacter salinus,1874317,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Marinobacteraceae;Marinobacter,50,0.00303343,0.0269392
+Marinobacter similis,1420916,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Marinobacteraceae;Marinobacter,123,0.00746224,0.0662705
+Marinobacter sp. BSs20148,490759,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Marinobacteraceae;Marinobacter,90,0.00546017,0.0484906
+Marinobacter sp. CP1,1671721,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Marinobacteraceae;Marinobacter,30,0.00182006,0.0161635
+Marinobacterium aestuarii,1821621,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Oceanospirillaceae;Marinobacterium,161,0.00976765,0.0867443
+Marinomonas mediterranea,119864,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Oceanospirillaceae;Marinomonas,571,0.0346418,0.307646
+Marinomonas posidonica,936476,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Oceanospirillaceae;Marinomonas,1246,0.0755931,0.671325
+Marinomonas sp. MWYL1,400668,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Oceanospirillaceae;Marinomonas,259,0.0157132,0.139545
+Marinovum algicola,42444,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Marinovum,48,0.00291209,0.0258617
+Marivirga tractuosa,1006,cellular organisms;Bacteroidota;Cytophagia;Cytophagales;Marivirgaceae;Marivirga,770,0.0467148,0.414864
+Marivivens sp. JLT3646,1920883,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Paracoccaceae;Marivivens,13,0.000788692,0.0070042
+Methanocaldococcus bathoardescens,1301915,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanocaldococcus,34,0.00206273,0.0183187
+Methanocaldococcus fervens,83171,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanocaldococcus,6,0.000364012,0.00323271
+Methanocaldococcus infernus,67760,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanocaldococcus,2,0.000121337,0.00107757
+Methanocaldococcus jannaschii,2190,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanocaldococcus,63,0.00382212,0.0339434
+Methanocaldococcus sp. FS406-22,644281,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanocaldococcus,6,0.000364012,0.00323271
+Methanocaldococcus vulcanius,73913,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanocaldococcus,178,0.010799,0.0959036
+Methanococcoides methylutens,2226,cellular organisms;Methanobacteriota;Methanomicrobia;Methanosarcinales;Methanosarcinaceae;Methanococcoides,34,0.00206273,0.0183187
+Methanococcus aeolicus,42879,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanococcaceae;Methanococcus,2,0.000121337,0.00107757
+Methanococcus maripaludis,39152,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanococcaceae;Methanococcus,98,0.00594552,0.0528009
+Methanococcus vannielii,2187,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanococcaceae;Methanococcus,4,0.000242674,0.00215514
+Methanococcus voltae,2188,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanococcaceae;Methanococcus,26,0.00157738,0.0140084
+Methanoculleus marisnigri,2198,cellular organisms;Methanobacteriota;Methanomicrobia;Methanomicrobiales;Methanomicrobiaceae;Methanoculleus,1,6.06686e-05,0.000538784
+Methanohalobium evestigatum,2322,cellular organisms;Methanobacteriota;Methanomicrobia;Methanosarcinales;Methanosarcinaceae;Methanohalobium,1,6.06686e-05,0.000538784
+Methanohalophilus halophilus,2177,cellular organisms;Methanobacteriota;Methanomicrobia;Methanosarcinales;Methanosarcinaceae;Methanohalophilus,62,0.00376145,0.0334046
+Methanolacinia petrolearia,54120,cellular organisms;Methanobacteriota;Methanomicrobia;Methanomicrobiales;Methanomicrobiaceae;Methanolacinia,1,6.06686e-05,0.000538784
+Methanopyrus kandleri,2320,cellular organisms;Methanobacteriota;Methanopyri;Methanopyrales;Methanopyraceae;Methanopyrus,6,0.000364012,0.00323271
+Methanosarcina acetivorans,2214,cellular organisms;Methanobacteriota;Methanomicrobia;Methanosarcinales;Methanosarcinaceae;Methanosarcina,147,0.00891828,0.0792013
+Methanosarcina siciliae,38027,cellular organisms;Methanobacteriota;Methanomicrobia;Methanosarcinales;Methanosarcinaceae;Methanosarcina,2178,0.132136,1.17347
+Methanosarcina sp. MTP4,1434100,cellular organisms;Methanobacteriota;Methanomicrobia;Methanosarcinales;Methanosarcinaceae;Methanosarcina,373,0.0226294,0.200967
+Methanosarcina sp. WH1,1434102,cellular organisms;Methanobacteriota;Methanomicrobia;Methanosarcinales;Methanosarcinaceae;Methanosarcina,47,0.00285142,0.0253229
+Methanothermococcus okinawensis,155863,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanococcaceae;Methanothermococcus,1,6.06686e-05,0.000538784
+Methanotorris igneus,2189,cellular organisms;Methanobacteriota;Methanococci;Methanococcales;Methanocaldococcaceae;Methanotorris,37,0.00224474,0.019935
+Methyloceanibacter caenitepidi,1384459,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Hyphomicrobiaceae;Methyloceanibacter,771,0.0467755,0.415403
+Methylomonas methanica,421,cellular organisms;Pseudomonadota;Gammaproteobacteria;Methylococcales;Methylococcaceae;Methylomonas,1657,0.100528,0.892766
+Methylophaga frappieri,754477,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Piscirickettsiaceae;Methylophaga,30,0.00182006,0.0161635
+Methylophaga nitratireducenticrescens,754476,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Piscirickettsiaceae;Methylophaga,89,0.00539951,0.0479518
+Methylophilales bacterium MBRS-H7,1623450,cellular organisms;Pseudomonadota;Betaproteobacteria;Nitrosomonadales;;,63,0.00382212,0.0339434
+Methylophilales bacterium MBRSF5,1623448,cellular organisms;Pseudomonadota;Betaproteobacteria;Nitrosomonadales;;,295,0.0178972,0.158941
+Methylophilales bacterium MBRSG12,1623449,cellular organisms;Pseudomonadota;Betaproteobacteria;Nitrosomonadales;;,37,0.00224474,0.019935
+Microbacterium sp. LKL04,912630,cellular organisms;Actinomycetota;Actinomycetes;Micrococcales;Microbacteriaceae;Microbacterium,8,0.000485349,0.00431028
+Micromonospora krabiensis,307121,cellular organisms;Actinomycetota;Actinomycetes;Micromonosporales;Micromonosporaceae;Micromonospora,103,0.00624887,0.0554948
+Micromonospora maris,1003110,cellular organisms;Actinomycetota;Actinomycetes;Micromonosporales;Micromonosporaceae;Micromonospora,208,0.0126191,0.112067
+Moorena producens,1155739,cellular organisms;Cyanobacteriota;Cyanophyceae;Coleofasciculales;Coleofasciculaceae;Moorena,265,0.0160772,0.142778
+Moritella viscosa,80854,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Moritellaceae;Moritella,1484,0.0900322,0.799556
+Mycobacteroides chelonae,1774,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Mycobacteriaceae;Mycobacteroides,2,0.000121337,0.00107757
+Mycolicibacterium chubuense,1800,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Mycobacteriaceae;Mycolicibacterium,7,0.00042468,0.00377149
+Mycolicibacterium rhodesiae,36814,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Mycobacteriaceae;Mycolicibacterium,45,0.00273009,0.0242453
+Myroides profundi,480520,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Myroides,78,0.00473215,0.0420252
+Nanoarchaeum equitans,160232,cellular organisms;Nanobdellota;Candidatus Nanoarchaeia;Nanoarchaeales;Nanoarchaeaceae;Nanoarchaeum,81,0.00491416,0.0436415
+Nanohaloarchaea archaeon SG9,1737403,cellular organisms;Methanobacteriota;Candidatus Nanohaloarchaea;;;,62,0.00376145,0.0334046
+Nautilia profundicola,244787,cellular organisms;Campylobacterota;Epsilonproteobacteria;Nautiliales;Nautiliaceae;Nautilia,44,0.00266942,0.0237065
+Nitratifractor salsuginis,269261,cellular organisms;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Sulfurovaceae;Nitratifractor,44,0.00266942,0.0237065
+Nitratiruptor sp. SB155-2,387092,cellular organisms;Campylobacterota;Epsilonproteobacteria;Nautiliales;Nitratiruptoraceae;Nitratiruptor,32,0.0019414,0.0172411
+Nitrosococcus halophilus,133539,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Chromatiaceae;Nitrosococcus,11040,0.669781,5.94818
+Nitrosococcus oceani,1229,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Chromatiaceae;Nitrosococcus,2083,0.126373,1.12229
+Nitrosopumilus adriaticus,1580092,cellular organisms;Nitrososphaerota;Nitrososphaeria;Nitrosopumilales;Nitrosopumilaceae;Nitrosopumilus,8,0.000485349,0.00431028
+Nitrosopumilus maritimus,338192,cellular organisms;Nitrososphaerota;Nitrososphaeria;Nitrosopumilales;Nitrosopumilaceae;Nitrosopumilus,20,0.00121337,0.0107757
+Nitrosopumilus piranensis,1582439,cellular organisms;Nitrososphaerota;Nitrososphaeria;Nitrosopumilales;Nitrosopumilaceae;Nitrosopumilus,46,0.00279076,0.0247841
+Nocardia seriolae,37332,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Nocardiaceae;Nocardia,12,0.000728023,0.00646541
+Nocardiopsis dassonvillei,2014,cellular organisms;Actinomycetota;Actinomycetes;Streptosporangiales;Nocardiopsidaceae;Nocardiopsis,15,0.000910029,0.00808177
+Nodularia spumigena,70799,cellular organisms;Cyanobacteriota;Cyanophyceae;Nostocales;Nodulariaceae;Nodularia,171,0.0103743,0.0921321
+Nonlabens dokdonensis,328515,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Nonlabens,179,0.0108597,0.0964424
+Nonlabens marinus,930802,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Nonlabens,21,0.00127404,0.0113145
+Nonlabens sp. Hel1_33_55,1336802,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Nonlabens,195,0.0118304,0.105063
+Nonlabens sp. MIC269,1476901,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Nonlabens,262,0.0158952,0.141162
+Novosphingobium pentaromativorans,205844,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Novosphingobium,459,0.0278469,0.247302
+Novosphingobium sp. PP1Y,702113,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingomonadaceae;Novosphingobium,667,0.040466,0.359369
+Oceanithermus profundus,187137,cellular organisms;Deinococcota;Deinococci;Thermales;Thermaceae;Oceanithermus,54,0.0032761,0.0290944
+Oceanobacillus iheyensis,182710,cellular organisms;Bacillota;Bacilli;Bacillales;Bacillaceae;Oceanobacillus,32,0.0019414,0.0172411
+Octadecabacter antarcticus,1217908,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Octadecabacter,540,0.032761,0.290944
+Octadecabacter arcticus,53946,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Octadecabacter,308,0.0186859,0.165946
+Octadecabacter temperatus,1458307,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Octadecabacter,105,0.0063702,0.0565724
+Oleispira antarctica,188908,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Oceanospirillaceae;Oleispira,42,0.00254808,0.0226289
+Oscillibacter valericigenes,351091,cellular organisms;Bacillota;Clostridia;Eubacteriales;Oscillospiraceae;Oscillibacter,939,0.0569678,0.505919
+Owenweeksia hongkongensis,253245,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Owenweeksiaceae;Owenweeksia,28,0.00169872,0.015086
+Paenibacillus crassostreae,1763538,cellular organisms;Bacillota;Bacilli;Bacillales;Paenibacillaceae;Paenibacillus,199,0.0120731,0.107218
+Paenibacillus durus,44251,cellular organisms;Bacillota;Bacilli;Bacillales;Paenibacillaceae;Paenibacillus,8,0.000485349,0.00431028
+Palaeococcus pacificus,971279,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Palaeococcus,1286,0.0780198,0.692877
+Paraglaciecola psychrophila,326544,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Paraglaciecola,140,0.0084936,0.0754298
+Paraglaciecola sp. T6c,3042615,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Alteromonadaceae;Paraglaciecola,142,0.00861494,0.0765074
+Paraoerskovia marina,545619,cellular organisms;Actinomycetota;Actinomycetes;Micrococcales;Cellulomonadaceae;Paraoerskovia,241,0.0146211,0.129847
+Parasynechococcus marenigrum,2881428,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Prochlorococcaceae;Parasynechococcus,71,0.00430747,0.0382537
+Paraurantiacibacter namhicola,645517,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Paraurantiacibacter,90,0.00546017,0.0484906
+Parvularcula bermudensis,208216,cellular organisms;Pseudomonadota;Alphaproteobacteria;Parvularculales;Parvularculaceae;Parvularcula,171,0.0103743,0.0921321
+Pelagerythrobacter marensis,543877,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Pelagerythrobacter,135,0.00819026,0.0727359
+Pelagibacterium halotolerans,531813,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Devosiaceae;Pelagibacterium,133,0.00806892,0.0716583
+Persephonella marina,309805,cellular organisms;Aquificota;Aquificia;Aquificales;Hydrogenothermaceae;Persephonella,76,0.00461081,0.0409476
+Phaeobacter gallaeciensis,60890,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Phaeobacter,653,0.0396166,0.351826
+Phaeobacter inhibens,221822,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Phaeobacter,206,0.0124977,0.11099
+Photobacterium gaetbulicola,1295392,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Photobacterium,337,0.0204453,0.18157
+Photobacterium profundum,74109,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Photobacterium,119,0.00721956,0.0641153
+Phycisphaera mikurensis,547188,cellular organisms;Planctomycetota;Phycisphaerae;Phycisphaerales;Phycisphaeraceae;Phycisphaera,177,0.0107383,0.0953648
+Piscirickettsia salmonis,1238,cellular organisms;Pseudomonadota;Gammaproteobacteria;Thiotrichales;Piscirickettsiaceae;Piscirickettsia,5534,0.33574,2.98163
+Planktomarina temperata,1284658,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Paracoccaceae;Planktomarina,32,0.0019414,0.0172411
+Planococcus antarcticus,161360,cellular organisms;Bacillota;Bacilli;Bacillales;Caryophanaceae;Planococcus,66,0.00400413,0.0355598
+Planococcus donghaensis,414778,cellular organisms;Bacillota;Bacilli;Bacillales;Caryophanaceae;Planococcus,47,0.00285142,0.0253229
+Planococcus kocurii,1374,cellular organisms;Bacillota;Bacilli;Bacillales;Caryophanaceae;Planococcus,60,0.00364012,0.0323271
+Planococcus maritimus,192421,cellular organisms;Bacillota;Bacilli;Bacillales;Caryophanaceae;Planococcus,68,0.00412547,0.0366373
+Planococcus plakortidis,1038856,cellular organisms;Bacillota;Bacilli;Bacillales;Caryophanaceae;Planococcus,103,0.00624887,0.0554948
+Polaribacter sp. Hel1_33_78,1336804,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Polaribacter,196,0.011891,0.105602
+Polaribacter sp. MED152,313598,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Polaribacter,11,0.000667355,0.00592663
+Polaribacter vadi,1774273,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Polaribacter,214,0.0129831,0.1153
+Prochlorococcus marinus,1219,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Prochlorococcaceae;Prochlorococcus,758,0.0459868,0.408399
+Prochlorococcus sp. MIT 0604,1501268,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Prochlorococcaceae;Prochlorococcus,55,0.00333677,0.0296331
+Prochlorococcus sp. MIT 0801,1501269,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Prochlorococcaceae;Prochlorococcus,45,0.00273009,0.0242453
+Prosthecochloris sp. CIB 2401,1868325,cellular organisms;Chlorobiota;Chlorobiia;Chlorobiales;Chlorobiaceae;Prosthecochloris,76,0.00461081,0.0409476
+Pseudalgibacter alginicilyticus,1736674,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Pseudalgibacter,1068,0.0647941,0.575422
+Pseudoalteromonas issachenkonii,152297,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;Pseudoalteromonas,83,0.00503549,0.0447191
+Pseudoalteromonas luteoviolacea,43657,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;Pseudoalteromonas,149,0.00903962,0.0802789
+Pseudoalteromonas phenolica,161398,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;Pseudoalteromonas,223,0.0135291,0.120149
+Pseudoalteromonas piratica,1348114,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;Pseudoalteromonas,50,0.00303343,0.0269392
+Pseudoalteromonas rubra,43658,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;Pseudoalteromonas,153,0.0092823,0.082434
+Pseudoalteromonas sp. SM9913,234831,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;Pseudoalteromonas,90,0.00546017,0.0484906
+Pseudoalteromonas translucida,166935,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Pseudoalteromonadaceae;Pseudoalteromonas,101,0.00612753,0.0544172
+Pseudodesulfovibrio mercurii,641491,cellular organisms;Thermodesulfobacteriota;Desulfovibrionia;Desulfovibrionales;Desulfovibrionaceae;Pseudodesulfovibrio,233,0.0141358,0.125537
+Pseudodesulfovibrio piezophilus,879567,cellular organisms;Thermodesulfobacteriota;Desulfovibrionia;Desulfovibrionales;Desulfovibrionaceae;Pseudodesulfovibrio,324,0.0196566,0.174566
+Pseudomonas pohangensis,364197,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Pseudomonas,35,0.0021234,0.0188575
+Pseudomonas sp. MT-1,150396,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Pseudomonas,92,0.00558151,0.0495682
+Pseudovibrio sp. FO-BEG1,911045,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Stappiaceae;Pseudovibrio,103,0.00624887,0.0554948
+Psychrobacter sp. AntiMn-1,1720344,cellular organisms;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Psychrobacter,111,0.00673422,0.0598051
+Psychrobacter sp. G,571800,cellular organisms;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Psychrobacter,62,0.00376145,0.0334046
+Psychrobacter sp. P11F6,1699621,cellular organisms;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Psychrobacter,222,0.0134684,0.11961
+Psychrobacter sp. P11G3,1699623,cellular organisms;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Psychrobacter,600,0.0364012,0.323271
+Psychrobacter sp. PRwf-1,349106,cellular organisms;Pseudomonadota;Gammaproteobacteria;Moraxellales;Moraxellaceae;Psychrobacter,82,0.00497483,0.0441803
+Psychroflexus torquis,57029,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Psychroflexus,5,0.000303343,0.00269392
+Psychromonas ingrahamii,357794,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Psychromonadaceae;Psychromonas,72,0.00436814,0.0387925
+Psychromonas sp. CNPT3,314282,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Psychromonadaceae;Psychromonas,41,0.00248741,0.0220902
+Pusillimonas sp. T7-7,1007105,cellular organisms;Pseudomonadota;Betaproteobacteria;Burkholderiales;Alcaligenaceae;Pusillimonas,34,0.00206273,0.0183187
+Pyrobaculum aerophilum,13773,cellular organisms;Thermoproteota;Thermoprotei;Thermoproteales;Thermoproteaceae;Pyrobaculum,118,0.0071589,0.0635766
+Pyrococcus abyssi,29292,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Pyrococcus,13,0.000788692,0.0070042
+Pyrococcus furiosus,2261,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Pyrococcus,84,0.00509616,0.0452579
+Pyrococcus horikoshii,53953,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Pyrococcus,54,0.0032761,0.0290944
+Pyrococcus sp. NA2,342949,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Pyrococcus,341,0.020688,0.183725
+Pyrococcus sp. ST04,1183377,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Pyrococcus,1,6.06686e-05,0.000538784
+Pyrococcus yayanosii,1008460,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Pyrococcus,23,0.00139538,0.012392
+Pyrodictium delaneyi,1273541,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Pyrodictiaceae;Pyrodictium,22,0.00133471,0.0118533
+Pyrolobus fumarii,54252,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Pyrodictiaceae;Pyrolobus,13,0.000788692,0.0070042
+Renibacterium salmoninarum,1646,cellular organisms;Actinomycetota;Actinomycetes;Micrococcales;Micrococcaceae;Renibacterium,3,0.000182006,0.00161635
+Rhodobacter xanthinilyticus,1850250,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;;Rhodobacter,46,0.00279076,0.0247841
+Rhodococcus erythropolis,1833,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Nocardiaceae;Rhodococcus,126,0.00764424,0.0678868
+Rhodococcus sp. 008,1723645,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Nocardiaceae;Rhodococcus,62,0.00376145,0.0334046
+Rhodococcus sp. B7740,1564114,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Nocardiaceae;Rhodococcus,230,0.0139538,0.12392
+Rhodococcus sp. WMMA185,679318,cellular organisms;Actinomycetota;Actinomycetes;Mycobacteriales;Nocardiaceae;Rhodococcus,41,0.00248741,0.0220902
+Rhodoferax ferrireducens,192843,cellular organisms;Pseudomonadota;Betaproteobacteria;Burkholderiales;Comamonadaceae;Rhodoferax,154,0.00934297,0.0829728
+Rhodothermus marinus,29549,cellular organisms;Rhodothermota;Rhodothermia;Rhodothermales;Rhodothermaceae;Rhodothermus,344,0.02087,0.185342
+Rhodovulum sulfidophilum,35806,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Paracoccaceae;Rhodovulum,118,0.0071589,0.0635766
+Rivularia sp. PCC 7116,373994,cellular organisms;Cyanobacteriota;Cyanophyceae;Nostocales;Rivulariaceae;Rivularia,119,0.00721956,0.0641153
+Robiginitalea biformata,252307,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Robiginitalea,82,0.00497483,0.0441803
+Roseicyclus elongatus,159346,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Roseicyclus,198,0.0120124,0.106679
+Roseobacter denitrificans,2434,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Roseobacter,455,0.0276042,0.245147
+Roseobacter litoralis,42443,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Roseobacter,106,0.00643087,0.0571111
+Ruegeria pomeroyi,89184,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Ruegeria,14,0.00084936,0.00754298
+Ruegeria sp. TM1040,292414,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Ruegeria,83,0.00503549,0.0447191
+Saccharophagus degradans,86304,cellular organisms;Pseudomonadota;Gammaproteobacteria;Cellvibrionales;Cellvibrionaceae;Saccharophagus,202,0.0122551,0.108834
+Salegentibacter sp. T436,1729720,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Salegentibacter,90,0.00546017,0.0484906
+Salinibacter ruber,146919,cellular organisms;Rhodothermota;Rhodothermia;Rhodothermales;Salinibacteraceae;Salinibacter,150,0.00910029,0.0808177
+Salinispira pacifica,1307761,cellular organisms;Spirochaetota;Spirochaetia;Spirochaetales;Spirochaetaceae;Salinispira,52,0.00315477,0.0280168
+Salinispora arenicola,168697,cellular organisms;Actinomycetota;Actinomycetes;Micromonosporales;Micromonosporaceae;Salinispora,181,0.010981,0.09752
+Salinispora tropica,168695,cellular organisms;Actinomycetota;Actinomycetes;Micromonosporales;Micromonosporaceae;Salinispora,402,0.0243888,0.216591
+Salipiger sp. CCB-MM3,1792508,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Salipiger,249,0.0151065,0.134157
+Salmonella enterica,28901,cellular organisms;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Enterobacteriaceae;Salmonella,83,0.00503549,0.0447191
+Saprospira grandis,1008,cellular organisms;Bacteroidota;Saprospiria;Saprospirales;Saprospiraceae;Saprospira,348,0.0211127,0.187497
+Sedimenticola thiotaurini,1543721,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Sedimenticolaceae;Sedimenticola,34,0.00206273,0.0183187
+Sediminicola sp. YIK13,1453352,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Sediminicola,21,0.00127404,0.0113145
+Serinicoccus hydrothermalis,1758689,cellular organisms;Actinomycetota;Actinomycetes;Micrococcales;Ornithinimicrobiaceae;Serinicoccus,136,0.00825093,0.0732747
+Shewanella amazonensis,60478,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,70,0.0042468,0.0377149
+Shewanella baltica,62322,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,3989,0.242007,2.14921
+Shewanella denitrificans,192073,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,68,0.00412547,0.0366373
+Shewanella frigidimarina,56812,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,21,0.00127404,0.0113145
+Shewanella halifaxensis,271098,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,997,0.0604866,0.537168
+Shewanella loihica,359303,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,21,0.00127404,0.0113145
+Shewanella pealeana,70864,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,122,0.00740157,0.0657317
+Shewanella piezotolerans,404011,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,431,0.0261482,0.232216
+Shewanella sediminis,271097,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,89,0.00539951,0.0479518
+Shewanella sp. ANA-3,94122,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,80,0.00485349,0.0431028
+Shewanella sp. MR-4,60480,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,87,0.00527817,0.0468742
+Shewanella sp. MR-7,60481,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,158,0.00958564,0.0851279
+Shewanella sp. W3-18-1,351745,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,121,0.0073409,0.0651929
+Shewanella violacea,60217,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,38,0.00230541,0.0204738
+Shewanella woodyi,60961,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Shewanellaceae;Shewanella,109,0.00661288,0.0587275
+Siansivirga zeaxanthinifaciens,762954,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Siansivirga,17,0.00103137,0.00915933
+Simiduia agarivorans,447471,cellular organisms;Pseudomonadota;Gammaproteobacteria;Cellvibrionales;Cellvibrionaceae;Simiduia,56,0.00339744,0.0301719
+Sphingopyxis alaskensis,117207,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingopyxidaceae;Sphingopyxis,10,0.000606686,0.00538784
+Sphingorhabdus lutea,1913578,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Sphingorhabdaceae;Sphingorhabdus,7,0.00042468,0.00377149
+Spiribacter curvatus,1335757,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Ectothiorhodospiraceae;Spiribacter,5811,0.352545,3.13088
+Spiribacter salinus,1335746,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Ectothiorhodospiraceae;Spiribacter,1675,0.10162,0.902464
+Spongiibacter sp. IMCC21906,1620392,cellular organisms;Pseudomonadota;Gammaproteobacteria;Cellvibrionales;Spongiibacteraceae;Spongiibacter,128,0.00776558,0.0689644
+Staphylothermus hellenicus,84599,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Staphylothermus,6,0.000364012,0.00323271
+Staphylothermus marinus,2280,cellular organisms;Thermoproteota;Thermoprotei;Desulfurococcales;Desulfurococcaceae;Staphylothermus,24,0.00145605,0.0129308
+Stappia sp. ES.058,1881061,cellular organisms;Pseudomonadota;Alphaproteobacteria;Hyphomicrobiales;Stappiaceae;Stappia,46,0.00279076,0.0247841
+Streptococcus agalactiae,1311,cellular organisms;Bacillota;Bacilli;Lactobacillales;Streptococcaceae;Streptococcus,71,0.00430747,0.0382537
+Streptococcus iniae,1346,cellular organisms;Bacillota;Bacilli;Lactobacillales;Streptococcaceae;Streptococcus,215,0.0130437,0.115839
+Streptococcus parauberis,1348,cellular organisms;Bacillota;Bacilli;Lactobacillales;Streptococcaceae;Streptococcus,4,0.000242674,0.00215514
+Streptomyces olivaceus,47716,cellular organisms;Actinomycetota;Actinomycetes;Kitasatosporales;Streptomycetaceae;Streptomyces,844,0.0512043,0.454734
+Streptomyces sp. CNQ-509,444103,cellular organisms;Actinomycetota;Actinomycetes;Kitasatosporales;Streptomycetaceae;Streptomyces,42,0.00254808,0.0226289
+Streptomyces sp. GBA 94-10 4N24,1218177,cellular organisms;Actinomycetota;Actinomycetes;Kitasatosporales;Streptomycetaceae;Streptomyces,2713,0.164594,1.46172
+Streptomyces sp. PVA_94-07,1225337,cellular organisms;Actinomycetota;Actinomycetes;Kitasatosporales;Streptomycetaceae;Streptomyces,2542,0.15422,1.36959
+Stutzerimonas balearica,74829,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Stutzerimonas,252,0.0152885,0.135774
+Stutzerimonas stutzeri,316,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Stutzerimonas,181,0.010981,0.09752
+Stutzerimonas xanthomarina,271420,cellular organisms;Pseudomonadota;Gammaproteobacteria;Pseudomonadales;Pseudomonadaceae;Stutzerimonas,16,0.000970698,0.00862055
+Sulfitobacter alexandrii,1917485,cellular organisms;Pseudomonadota;Alphaproteobacteria;Rhodobacterales;Roseobacteraceae;Sulfitobacter,39,0.00236608,0.0210126
+Sulfobacillus acidophilus,53633,cellular organisms;Bacillota;Clostridia;Eubacteriales;Clostridiales Family XVII. Incertae Sedis;Sulfobacillus,1,6.06686e-05,0.000538784
+Sulfurimonas autotrophica,202747,cellular organisms;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Sulfurimonadaceae;Sulfurimonas,15,0.000910029,0.00808177
+Sulfurimonas denitrificans,39766,cellular organisms;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Sulfurimonadaceae;Sulfurimonas,81,0.00491416,0.0436415
+Sulfurovum sp. NBC37-1,387093,cellular organisms;Campylobacterota;Epsilonproteobacteria;Campylobacterales;Sulfurovaceae;Sulfurovum,4049,0.245647,2.18154
+Synechococcus sp. CC9311,64471,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,65,0.00394346,0.035021
+Synechococcus sp. CC9605,110662,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,24,0.00145605,0.0129308
+Synechococcus sp. CC9902,316279,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,186,0.0112844,0.100214
+Synechococcus sp. KORDI-100,1280380,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,36,0.00218407,0.0193962
+Synechococcus sp. KORDI-49,585423,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,6,0.000364012,0.00323271
+Synechococcus sp. KORDI-52,585425,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,102,0.0061882,0.054956
+Synechococcus sp. RCC307,316278,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,244,0.0148031,0.131463
+Synechococcus sp. WH 7803,32051,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,75,0.00455015,0.0404088
+Synechococcus sp. WH 8020,32052,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,11,0.000667355,0.00592663
+Synechococcus sp. WH 8103,29410,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,68,0.00412547,0.0366373
+Synechococcus sp. WH 8109,166314,cellular organisms;Cyanobacteriota;Cyanophyceae;Synechococcales;Synechococcaceae;Synechococcus,21,0.00127404,0.0113145
+Syntrophotalea acetylenica,29542,cellular organisms;Thermodesulfobacteriota;Desulfuromonadia;Desulfuromonadales;Syntrophotaleaceae;Syntrophotalea,4723,0.286538,2.54468
+Syntrophotalea carbinolica,19,cellular organisms;Thermodesulfobacteriota;Desulfuromonadia;Desulfuromonadales;Syntrophotaleaceae;Syntrophotalea,336,0.0203847,0.181032
+Tenacibaculum dicentrarchi,669041,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Tenacibaculum,594,0.0360372,0.320038
+Tenacibaculum todarodis,1850252,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Tenacibaculum,252,0.0152885,0.135774
+Teredinibacter turnerae,2426,cellular organisms;Pseudomonadota;Gammaproteobacteria;Cellvibrionales;Cellvibrionaceae;Teredinibacter,6,0.000364012,0.00323271
+Thalassolituus oleivorans,187493,cellular organisms;Pseudomonadota;Gammaproteobacteria;Oceanospirillales;Oceanospirillaceae;Thalassolituus,2224,0.134927,1.19826
+Thalassoporum mexicanum,3457544,cellular organisms;Cyanobacteriota;Cyanophyceae;Pseudanabaenales;Thalassoporaceae;Thalassoporum,183,0.0111024,0.0985975
+Thalassotalea crassostreae,1763536,cellular organisms;Pseudomonadota;Gammaproteobacteria;Alteromonadales;Colwelliaceae;Thalassotalea,119,0.00721956,0.0641153
+Thermaerobacter marianensis,73919,cellular organisms;Bacillota;Clostridia;Eubacteriales;Clostridiales Family XVII. Incertae Sedis;Thermaerobacter,60,0.00364012,0.0323271
+Thermoanaerobacter siderophilus,106578,cellular organisms;Bacillota;Clostridia;Thermoanaerobacterales;Thermoanaerobacteraceae;Thermoanaerobacter,68,0.00412547,0.0366373
+Thermoclostridium stercorarium,1510,cellular organisms;Bacillota;Clostridia;Eubacteriales;Oscillospiraceae;Thermoclostridium,90,0.00546017,0.0484906
+Thermococcus barophilus,55802,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,12,0.000728023,0.00646541
+Thermococcus cleftensis,163003,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,6,0.000364012,0.00323271
+Thermococcus eurythermalis,1505907,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,21,0.00127404,0.0113145
+Thermococcus gammatolerans,187878,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,15,0.000910029,0.00808177
+Thermococcus litoralis,2265,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,32,0.0019414,0.0172411
+Thermococcus nautili,195522,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,11,0.000667355,0.00592663
+Thermococcus onnurineus,342948,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,7,0.00042468,0.00377149
+Thermococcus paralvinellae,582419,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,38,0.00230541,0.0204738
+Thermococcus piezophilus,1712654,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,12,0.000728023,0.00646541
+Thermococcus sp. 4557,1042877,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,119,0.00721956,0.0641153
+Thermococcus sp. AM4,246969,cellular organisms;Methanobacteriota;Thermococci;Thermococcales;Thermococcaceae;Thermococcus,21,0.00127404,0.0113145
+Thermodesulfatator indicus,171695,cellular organisms;Thermodesulfobacteriota;Thermodesulfobacteria;Thermodesulfobacteriales;Thermodesulfatatoraceae;Thermodesulfatator,36,0.00218407,0.0193962
+Thermoplasma volcanium,50339,cellular organisms;Thermoplasmatota;Thermoplasmata;Thermoplasmatales;Thermoplasmataceae;Thermoplasma,12,0.000728023,0.00646541
+Thermosediminibacter oceani,291990,cellular organisms;Bacillota;Clostridia;Thermosediminibacterales;Thermosediminibacteraceae;Thermosediminibacter,24,0.00145605,0.0129308
+Thermosipho melanesiensis,46541,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Fervidobacteriaceae;Thermosipho,54,0.0032761,0.0290944
+Thermosipho sp. 1063,1462747,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Fervidobacteriaceae;Thermosipho,85,0.00515683,0.0457967
+Thermotoga maritima,2336,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga,697,0.042286,0.375533
+Thermotoga neapolitana,2337,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga,47,0.00285142,0.0253229
+Thermotoga sp. 2812B,1157948,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga,124,0.00752291,0.0668093
+Thermotoga sp. Cell2,1157947,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga,211,0.0128011,0.113684
+Thermotoga sp. RQ2,126740,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga,286,0.0173512,0.154092
+Thermotoga sp. RQ7,126738,cellular organisms;Thermotogota;Thermotogae;Thermotogales;Thermotogaceae;Thermotoga,51,0.0030941,0.027478
+Thermovibrio ammonificans,228745,cellular organisms;Aquificota;Aquificia;Desulfurobacteriales;Desulfurobacteriaceae;Thermovibrio,3,0.000182006,0.00161635
+Thermovirga lienii,336261,cellular organisms;Synergistota;Synergistia;Synergistales;Thermovirgaceae;Thermovirga,148,0.00897895,0.0797401
+Thiocystis violascens,73141,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Chromatiaceae;Thiocystis,717,0.0434994,0.386308
+Thioflavicoccus mobilis,80679,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Chromatiaceae;Thioflavicoccus,15,0.000910029,0.00808177
+Thiolapillus brandeum,1076588,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Sedimenticolaceae;Thiolapillus,566,0.0343384,0.304952
+Tistrella mobilis,171437,cellular organisms;Pseudomonadota;Alphaproteobacteria;Geminicoccales;Geminicoccaceae;Tistrella,484,0.0293636,0.260772
+Trichodesmium erythraeum,1206,cellular organisms;Cyanobacteriota;Cyanophyceae;Oscillatoriales;Microcoleaceae;Trichodesmium,6,0.000364012,0.00323271
+Tsuneonella dongtanensis,692370,cellular organisms;Pseudomonadota;Alphaproteobacteria;Sphingomonadales;Erythrobacteraceae;Tsuneonella,30,0.00182006,0.0161635
+Vibrio alginolyticus,663,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,407,0.0246921,0.219285
+Vibrio anguillarum,55601,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,2841,0.17236,1.53069
+Vibrio antiquarius,150340,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,98,0.00594552,0.0528009
+Vibrio breoganii,553239,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,121,0.0073409,0.0651929
+Vibrio campbellii,680,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,197,0.0119517,0.106141
+Vibrio cholerae,666,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,853,0.0517503,0.459583
+Vibrio coralliilyticus,190893,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,3292,0.199721,1.77368
+Vibrio furnissii,29494,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,243,0.0147425,0.130925
+Vibrio harveyi,669,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,419,0.0254201,0.225751
+Vibrio natriegens,691,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,1913,0.116059,1.03069
+Vibrio nigripulchritudo,28173,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,231,0.0140144,0.124459
+Vibrio parahaemolyticus,670,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,500,0.0303343,0.269392
+Vibrio scophthalmi,45658,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,1733,0.105139,0.933713
+Vibrio sp. EJY3,1116375,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,378,0.0229327,0.203661
+Vibrio tubiashii,29498,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,647,0.0392526,0.348594
+Vibrio vulnificus,672,cellular organisms;Pseudomonadota;Gammaproteobacteria;Vibrionales;Vibrionaceae;Vibrio,258,0.0156525,0.139006
+Weissella ceti,759620,cellular organisms;Bacillota;Bacilli;Lactobacillales;Lactobacillaceae;Weissella,14,0.00084936,0.00754298
+Wenyingzhuangia fucanilytica,1790137,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Wenyingzhuangia,247,0.0149851,0.13308
+Wenzhouxiangella marina,1579979,cellular organisms;Pseudomonadota;Gammaproteobacteria;Chromatiales;Wenzhouxiangellaceae;Wenzhouxiangella,9,0.000546017,0.00484906
+Winmispira thermophila,154,cellular organisms;Spirochaetota;Spirochaetia;Winmispirales;Winmispiraceae;Winmispira,111,0.00673422,0.0598051
+Winogradskyella sp. PG-2,754409,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Winogradskyella,17,0.00103137,0.00915933
+Woeseia oceani,1548547,cellular organisms;Pseudomonadota;Gammaproteobacteria;Woeseiales;Woeseiaceae;Woeseia,324,0.0196566,0.174566
+Yersinia aldovae,29483,cellular organisms;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Yersiniaceae;Yersinia,122,0.00740157,0.0657317
+Yersinia ruckeri,29486,cellular organisms;Pseudomonadota;Gammaproteobacteria;Enterobacterales;Yersiniaceae;Yersinia,151,0.00916096,0.0813564
+Zunongwangia profunda,398743,cellular organisms;Bacteroidota;Flavobacteriia;Flavobacteriales;Flavobacteriaceae;Zunongwangia,529,0.0320937,0.285017
+alpha proteobacterium HIMB5,859653,cellular organisms;Pseudomonadota;Alphaproteobacteria;Candidatus Pelagibacterales;Candidatus Pelagibacteraceae;,56,0.00339744,0.0301719
+alpha proteobacterium HIMB59,744985,cellular organisms;Pseudomonadota;Alphaproteobacteria;Candidatus Pelagibacterales;Candidatus Pelagibacteraceae;,75,0.00455015,0.0404088
+bacterium AB1,1898108,cellular organisms;;;;;,1,6.06686e-05,0.000538784
+endosymbiont of unidentified scaly snail isolate Monju,1248727,cellular organisms;Pseudomonadota;Gammaproteobacteria;;;,66,0.00400413,0.0355598
+UNKNOWN,UNKNOWN,UNKNOWN,1462696,88.7397,-
